@@ -8,7 +8,12 @@ SECRET_KEY = 'django-insecure-b0e30#c#=^emo1d!7p8$^(xjw9$yp^xi_vc8me061mqu-4=rp#
 
 DEBUG = True
 
-ALLOWED_HOSTS = ['musasmart-68fac634de91.herokuapp.com', '127.0.0.1', 'localhost']
+ALLOWED_HOSTS = [
+    'mussasmart-4ed0a163166f.herokuapp.com',  # Corrected Heroku domain
+    'musasmart-68fac634de91.herokuapp.com',   # (optional, if still in use)
+    '127.0.0.1',
+    'localhost',
+]
 
 
 INSTALLED_APPS = [
