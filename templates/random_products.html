@@ -1,0 +1,115 @@
+{% extends "base.html" %}
+{% load static %}
+{% block content %}
+ <div class="container mt-4">
+    <p>
+        <a href="{% url 'Category' %}" style="text-decoration: none; font-family: Poppins;
+        font-size: 16px; font-weight: 600; line-height: 32px; text-align: left;
+        color: rgba(109, 109, 109, 1);">Home</a>
+    </p>
+
+    <form id="search-form" method="GET" action="{% url 'random_products' %}">
+
+        <div class="d-flex">
+        <input type="text" name="q" id="search-input" placeholder="Search products..." class="form-control">
+        <button type="submit" class="btn " style="background-color: black;color: white;">Search</button>
+    </div>
+    </form>
+
+    <section class="category">
+        <div class="container camera_section2" style="margin-top: 100px;">
+            <div style="display: flex; justify-content: space-between; flex-wrap: wrap;">
+                <div>
+                    <h1>Browse {{ category.name }}</h1>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="items">
+        <div class="row" id="product-list">
+            {% for product in page_obj %}
+                <div class="col-md-3 mb-4">
+                    <a href="{% url 'pdp' id_cat=product.Category_of_items.id rental_item_id=product.id %}">
+                    <div class="card">
+                        <img src="{{ product.image.url }}" class="card-img-top" style="max-width: 300px; height: 160px; object-fit: contain;" alt="{{ product.name }}">
+                        <div class="card-body">
+                            <h5 class="card-title">{{ product.title }}</h5>
+                            <p class="card-text">${{ product.price }}</p>
+                        </div>
+                    </div>        </a>
+
+                </div>
+            {% endfor %}
+        </div>
+
+        <div class="pagination justify-content-center">
+            <ul class="pagination">
+                {% if page_obj.has_previous %}
+                    <li class="page-item">
+                        <a class="page-link" href="?page=1">&laquo; First</a>
+                    </li>
+                    <li class="page-item">
+                        <a class="page-link" href="?page={{ page_obj.previous_page_number }}">Previous</a>
+                    </li>
+                {% endif %}
+                <li class="page-item disabled">
+                    <span class="page-link"> Page {{ page_obj.title }} of {{ page_obj.paginator.num_pages }} </span>
+                </li>
+                {% if page_obj.has_next %}
+                    <li class="page-item">
+                        <a class="page-link" href="?page={{ page_obj.next_page_number }}">Next</a>
+                    </li>
+                    <li class="page-item">
+                        <a class="page-link" href="?page={{ page_obj.paginator.num_pages }}">Last &raquo;</a>
+                    </li>
+                {% endif %}
+            </ul>
+        </div>
+    </section>
+</div>
+
+<script>
+    $(document).ready(function() {
+        $('#search-form').on('submit', function(event) {
+            event.preventDefault(); // Prevent full page reload
+
+            let formData = $(this).serialize(); // Serialize form data
+
+            $.ajax({
+                type: 'GET',
+                url: $(this).attr('action'),
+                data: formData,
+                dataType: 'json',
+                success: function(response) {
+                    let productList = $('#product-list');
+                    productList.empty(); // Clear existing products
+
+                    if (response.products.length > 0) {
+                        $.each(response.products, function(index, product) {
+                            let productHtml = `
+                                <div class="col-md-3 mb-4">
+                                    <div class="card">
+                                        <img src="${product.image_url}" class="card-img-top" alt="${product.name}">
+                                        <div class="card-body">
+                                            <h5 class="card-title">${product.title}</h5>
+                                            <p class="card-text">$${product.price}</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            `;
+                            productList.append(productHtml);
+                        });
+                    } else {
+                        productList.append('<p class="alert alert-warning text-center">No products found.</p>');
+                    }
+                },
+                error: function(xhr, status, error) {
+                    console.error("Error:", xhr.responseText);
+                }
+            });
+        });
+    });
+</script>
+
+{% endblock %}

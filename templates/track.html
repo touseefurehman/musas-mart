@@ -1,0 +1,40 @@
+{% extends "base.html" %}
+{% load static %}
+
+{% block content %}
+
+
+
+<div class="container">
+    <h2>Track Your Order</h2>
+    
+    <form method="GET">
+        <input type="text" name="tracking_key" placeholder="Enter Tracking Key" required>
+        <button type="submit">Track</button>
+    </form>
+
+    {% if error_message %}
+        <p class="error">{{ error_message }}</p>
+    {% endif %}
+
+    {% if order_info %}
+        <div class="order-info">
+            <h3>Order Details</h3>
+            <p><strong>Tracking Key:</strong> {{ order_info.tracking_key }}</p>
+            <p><strong>Username:</strong> {{ order_info.username }}</p>
+            <p><strong>Email:</strong> {{ order_info.email }}</p>
+            <p><strong>Mobile:</strong> {{ order_info.mobile_number }}</p>
+            <p><strong>Address:</strong> {{ order_info.address }}</p>
+            <p><strong>Country:</strong> {{ order_info.country }}</p>
+            <p><strong>Quantity:</strong> {{ order_info.quantity }}</p>
+            <p><strong>Status:</strong> {{ order_info.get_status_display }}</p>
+            <p><strong>Admin Note:</strong> {{ order_info.admin_note|default:"No updates yet" }}</p>
+        </div>
+    {% endif %}
+</div>
+
+
+
+
+
+{% endblock %}
