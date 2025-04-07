@@ -46,7 +46,6 @@ py-itree==0.0.21
 pyaml==25.1.0
 pycairo==1.27.0
 pycparser==2.22
-pycups==2.0.4
 pydantic==2.11.2
 pydantic_core==2.33.1
 Pygments==2.19.1
