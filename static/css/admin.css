@@ -8,7 +8,6 @@ body, .module {
     background-color: var(--primary-bg) !important;
     color: var(--text-color) !important;
 }
-
 .module caption, .module h2 {
     background-color: var(--secondary-bg) !important;
     color: var(--text-color) !important;
