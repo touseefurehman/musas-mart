@@ -3,3 +3,5 @@ libdbus-1-dev
 libbtrfs-dev
 make
 gcc
+btrfsutil
+dbus
