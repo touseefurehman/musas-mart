@@ -5,16 +5,16 @@
 
 
 
-<div class="container">
+<div class="container pt-5">
     <h2>Track Your Order</h2>
     
     <form method="GET">
-        <input type="text" name="tracking_key" placeholder="Enter Tracking Key" required>
-        <button type="submit">Track</button>
+        <input class="mt-5 p-2" type="text" name="tracking_key" placeholder="Enter Tracking Key" required   style="border-radius: 12px;">
+        <button style="color: white;background-color: black; border-radius: 12px; " class="p-2" type="submit">Track</button>
     </form>
 
     {% if error_message %}
-        <p class="error">{{ error_message }}</p>
+        <p style="color: red;" class="error">{{ error_message }}</p>
     {% endif %}
 
     {% if order_info %}
@@ -35,6 +35,12 @@
 
 
 
+<div class="pt-5 mt-5">
 
+
+
+
+
+</div>
 
 {% endblock %}
