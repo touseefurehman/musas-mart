@@ -6,7 +6,7 @@ BASE_DIR = Path(__file__).resolve().parent.parent
 
 SECRET_KEY = 'django-insecure-b0e30#c#=^emo1d!7p8$^(xjw9$yp^xi_vc8me061mqu-4=rp#'
 
-DEBUG = False
+DEBUG = True
 
 ALLOWED_HOSTS = ['musasmart-68fac634de91.herokuapp.com', '127.0.0.1', 'localhost']
 
