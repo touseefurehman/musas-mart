@@ -7,7 +7,7 @@ BASE_DIR = Path(__file__).resolve().parent.parent
 
 SECRET_KEY = 'django-insecure-b0e30#c#=^emo1d!7p8$^(xjw9$yp^xi_vc8me061mqu-4=rp#'
 
-DEBUG = False
+DEBUG = True
 
 ALLOWED_HOSTS = [
     'mussasmart-4ed0a163166f.herokuapp.com',  # Corrected Heroku domain
