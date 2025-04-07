@@ -7,7 +7,7 @@ BASE_DIR = Path(__file__).resolve().parent.parent
 
 SECRET_KEY = 'django-insecure-b0e30#c#=^emo1d!7p8$^(xjw9$yp^xi_vc8me061mqu-4=rp#'
 
-DEBUG = True
+DEBUG = False
 
 ALLOWED_HOSTS = [
     'mussasmart-4ed0a163166f.herokuapp.com',  # Corrected Heroku domain
@@ -32,6 +32,8 @@ MIDDLEWARE = [
     'django.middleware.security.SecurityMiddleware',
     'django.contrib.sessions.middleware.SessionMiddleware',
     'django.middleware.common.CommonMiddleware',
+    'whitenoise.middleware.WhiteNoiseMiddleware',  # <-- Add this!
+
     'django.middleware.csrf.CsrfViewMiddleware',
     'django.contrib.auth.middleware.AuthenticationMiddleware',
     'django.contrib.messages.middleware.MessageMiddleware',
