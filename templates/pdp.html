@@ -44,19 +44,7 @@
     <div class="deatails">
 
 
-
-
-
-
-            
-
-
-
-
-
-
-
-        <div class="row">
+     <div class="row">
             <div class="col-lg-7 col-sm-12">
                 
                 
@@ -128,7 +116,7 @@
                 
                 
                 
-                
+           
                 
                 
                 
@@ -193,7 +181,7 @@
                         <h1 class="pdp-title">Category of items: {{ product.Category_of_items }}</h1>
 
 
-                     <h1 class="pdp-title">Price:   <span style="color: Green;"> PKR {{ product.price }} </span></h1>
+                     <h1 class="pdp-title">Price:   <span style="color: rgba(0, 84, 148, 1);"> <b> PKR  {{ product.price }} </b></span></h1>
 
                      <h1 class="pdp-title">Quantity Avilable: {{ product.quantity }}</h1>
 
@@ -208,14 +196,14 @@
    
         
 
-                            <button id="checkBtn" type="button" style='width: 100%; background-color: black !important;'
-                              class="btn p-4  mt-2 pd-check-btn" data-bs-toggle="modal" data-bs-target="#exampleModal"> 
+            <a href="{% url 'checkout' product.id %}" style="text-decoration: none;color: white;"> <b>
+                            <button id="checkBtn" type="button" style='width: 100%; background-color: black !important;color:white;'
+                              class="btn p-4  mt-2 pd-check-btn" data-bs-toggle="modal" data-bs-target="#exampleModal" s> 
                               
-                              <a href="{% url 'checkout' product.id %}" style="text-decoration: none;color: white;"> <b>
-                              Place oder Now </b></a>
+                              Place oder Now </b>
                             </button>
 
-
+                        </a>
 
 
 
