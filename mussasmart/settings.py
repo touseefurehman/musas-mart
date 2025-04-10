@@ -11,13 +11,14 @@ DEBUG = True
 
 ALLOWED_HOSTS = [
     'mussasmart-4ed0a163166f.herokuapp.com',  # Corrected Heroku domain
-    'musasmart-68fac634de91.herokuapp.com',   # (optional, if still in use)
     '127.0.0.1',
     'localhost',
     'www.musasmart.com', 'musasmart.com'
 ]
 STATICFILES_DIRS = [os.path.join(BASE_DIR, 'static')]
+SECURE_SSL_REDIRECT = True
 
+SECURE_PROXY_SSL_HEADER = ('HTTP_X_FORWARDED_PROTO', 'https')
 
 INSTALLED_APPS = [
     'django.contrib.admin',
