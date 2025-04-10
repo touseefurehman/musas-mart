@@ -10,10 +10,11 @@ SECRET_KEY = 'django-insecure-b0e30#c#=^emo1d!7p8$^(xjw9$yp^xi_vc8me061mqu-4=rp#
 DEBUG = True
 
 ALLOWED_HOSTS = [
+    'www.musasmart.com',
+    'musasmart.com'
     'mussasmart-4ed0a163166f.herokuapp.com',  # Corrected Heroku domain
     '127.0.0.1',
     'localhost',
-    'www.musasmart.com', 'musasmart.com'
 ]
 STATICFILES_DIRS = [os.path.join(BASE_DIR, 'static')]
 SECURE_SSL_REDIRECT = True
