@@ -14,6 +14,7 @@ ALLOWED_HOSTS = [
     'musasmart-68fac634de91.herokuapp.com',   # (optional, if still in use)
     '127.0.0.1',
     'localhost',
+    'www.musasmart.com', 'musasmart.com'
 ]
 STATICFILES_DIRS = [os.path.join(BASE_DIR, 'static')]
 
