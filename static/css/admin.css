@@ -21,7 +21,7 @@ body, .module {
 .button, .submit-row input {
     background-color: #6c757d !important; /* Grey Button */
     color: white !important;
-}
+} 
 
 a {
     color: #495057 !important;
