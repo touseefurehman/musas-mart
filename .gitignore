@@ -1,0 +1,32 @@
+# Python-related
+__pycache__/
+*.py[cod]
+*.egg
+*.egg-info/
+dist/
+build/
+
+# Environment
+.env
+*.env
+
+# Django-specific
+db.sqlite3
+*.log
+*.pot
+*.pyc
+
+# VS Code
+.vscode/
+
+# Node
+node_modules/
+
+# OS-specific
+.DS_Store
+Thumbs.db
+
+
+
+
+media

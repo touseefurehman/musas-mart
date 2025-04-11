@@ -19,6 +19,14 @@ ALLOWED_HOSTS = [
 STATICFILES_DIRS = [os.path.join(BASE_DIR, 'static')]
 # SECURE_SSL_REDIRECT = True
 
+
+
+CSRF_TRUSTED_ORIGINS = [
+    "https://www.musasmart.com",
+]
+
+
+
 SECURE_PROXY_SSL_HEADER = ('HTTP_X_FORWARDED_PROTO', 'https')
 
 INSTALLED_APPS = [
