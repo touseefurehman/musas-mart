@@ -10,9 +10,7 @@ build/
 .env
 *.env
 
-# Django-specific
-db.sqlite3
-*.log
+
 *.pot
 *.pyc
 
