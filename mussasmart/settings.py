@@ -12,7 +12,7 @@ DEBUG = True
 ALLOWED_HOSTS = [
     'www.musasmart.com',
     'musasmart.com',
-    'mussasmart-4ed0a163166f.herokuapp.com',  # Corrected Heroku domain
+    'mussasmart-45529e545b3a.herokuapp.com',  
     '127.0.0.1',
     'localhost',
 ]
