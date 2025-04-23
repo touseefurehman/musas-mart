@@ -77,12 +77,15 @@ WSGI_APPLICATION = 'mussasmart.wsgi.application'
 
 STATICFILES_STORAGE = 'whitenoise.storage.CompressedManifestStaticFilesStorage'
 
-# Database
-# https://docs.djangoproject.com/en/5.2/ref/settings/#databases
+from dotenv import load_dotenv
+load_dotenv()  # Loads environment variables from a .env file
+
+DATABASE_URL = os.getenv('DATABASE_URL', 'sqlite:///db.sqlite3')  # fallback to SQLite for dev
 
 DATABASES = {
-    'default': dj_database_url.config(default='sqlite:///db.sqlite3')
+    'default': dj_database_url.config(default=DATABASE_URL, conn_max_age=600)
 }
+
 
 SECURE_PROXY_SSL_HEADER = ('HTTP_X_FORWARDED_PROTO', 'https')
 
