@@ -1,0 +1,94 @@
+{% extends "base.html" %} {% load static %} {% block content %} <div class="container mt-4">
+    <p>
+        <a href="#" style="text-decoration: none; 
+        font-family: Poppins;
+        font-size: 16px;
+        font-weight: 600;
+        line-height: 32px;
+        text-align: left;
+        color: rgba(109, 109, 109, 1);
+
+            ">Home</a>
+        <i class="bi bi-chevron-right" style="color: rgba(109, 109, 109, 1);"></i>
+        <a href="#" style="text-decoration: none;
+        font-family: Poppins;
+        font-size: 16px;
+        font-weight: 600;
+        line-height: 32px;
+        text-align: left;
+        color: rgba(0, 84, 148, 1)
+        ;">Camera</a>
+    </p>
+
+<div class="container">
+    <div class="camera_page_s1 text-center pt-5 pb-5 text-center">
+        <h1 class="pt-5">Rent Cameras in Hong Kong 
+        with Elephant Please</h1>
+        <p class="text-center pt-3" style="max-width: 500px; margin: 0 auto;">Rent a Camera from a fellow photographer
+            in Hong Kong. Over 50% Cheaper Than Traditional Rental Spend less & Enjoy more</p>
+
+
+
+
+
+
+
+
+
+
+
+
+<div class="input-group mt-5 " style="max-width: 550px;margin: auto;">
+        <input type="text" style="border-radius: 16px;" class="form-control" placeholder="Search something..." aria-label="Search something..." aria-describedby="search-btn">
+        <div class="input-group-append">
+          <button class="s1_button" type="button" id="search-btn">Search</button>
+        </div>
+
+
+
+
+   </div>
+</div>
+</div>
+
+<section class="category">
+    <div class="container camera_section2" style="margin-top: 100px;">
+        <div style="display: flex; justify-content: space-between; flex-wrap: wrap;">
+            <div>
+                <h1>Browse Cameras</h1>
+                <p>Displaying 18 Results</p>
+            </div>
+         
+            <div>
+                    <a class="dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false" style="color: black; text-decoration: none;">Sort By: Default Order</a>
+                    <ul class="dropdown-menu" style="float: right;">
+                        <li><a class="dropdown-item" href="#">Sort Option 1</a></li>
+                        <li><a class="dropdown-item" href="#">Sort Option 2</a></li>
+                        <li><a class="dropdown-item" href="#">Sort Option 3</a></li>
+                    </ul>
+                
+                <img src="{% static 'image/nav/menu.png' %}" class="img" alt="Menu">
+                <img src="{% static 'image/nav/dashboard.png' %}" class="img" alt="Dashboard">
+                <img src="{% static 'image/nav/map-pin.png' %}" class="img" alt="Map Pin">
+            </div>
+        </div>
+    </div>
+</section>
+
+<section class="items">
+    <div class="row">
+
+
+
+
+        
+            {% include 'components/card2.html' %}
+
+     
+    </div>
+    
+
+
+ 
+</section></div>
+ {% endblock %}

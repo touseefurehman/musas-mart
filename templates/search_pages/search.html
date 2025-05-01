@@ -1,0 +1,91 @@
+{% extends "base.html" %}
+{% load static %}
+
+{% block content %}
+
+
+
+<style>
+
+
+  .card:hover  {
+    transform: scale(1.2);
+    transition: transform 0.3s ease-in-out;
+  }
+</style>
+<div class="container mt-4">
+                        <p>
+                            <a href="{}" style="text-decoration: none; 
+                                font-family: Poppins;
+                                font-size: 16px;
+                                font-weight: 600;
+                                line-height: 32px;
+                                text-align: left;
+                                color: rgba(109, 109, 109, 1);">
+                                Category
+                            </a>
+                            <i class="bi bi-chevron-right" style="color: rgba(109, 109, 109, 1);"></i>
+                        
+                        </p>
+                        
+                   
+
+                    <section class="category">
+                      <div class="container" style="margin-top:50px;">
+                        <h1 style="font-family: Montserrat;
+                        font-size: 45px;
+                        font-weight: 700;
+                        text-align: left;">
+                        Hot Category
+                            </h1>
+                          </div>
+                    </section>
+                    
+
+                  
+
+
+                   
+                    
+                    
+                    <div class="row">
+                      
+                            {% for items_cat in items_cat %}
+                          
+                          <div class="col-lg-3 col-md-6 col-sm-12 mt-5"> 
+                        
+                          <div class="card border-0">
+                              <a style="text-decoration: none;color: none;" href="{% url 'search_by_category' items_cat.id %}" class="card-link" >
+                                {% if items_cat.image %}
+                                <img src="{{ MEDIA_URL }}{{ items_cat.image.url }}" style="max-width: 300px; height: 160px; object-fit: contain;"
+
+                              class="card-img-top img-cards1" alt="...">
+                            {% endif %}
+                                  <div class="card-body">
+                                      <h5 class="card-title">{{ items_cat.name }}</h5>
+                                      <div class="card-address">
+                                          <p class="card-text">{{ items_cat.location }}</p>
+                                      </div>
+                                  </div>
+                              </a>        
+                            </div>
+                          </div>  
+                          {% endfor %}
+                
+                
+                
+                  </div>
+                
+                
+                
+                
+                </div>
+
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+          {% endblock %}
+          

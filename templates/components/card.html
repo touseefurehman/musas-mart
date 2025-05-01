@@ -1,0 +1,37 @@
+{% load static %} <!-- base.html -->
+<!doctype html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Rent and lend</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+  <link rel="stylesheet" href="{% static 'css/style.css' %}">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons/font/bootstrap-icons.css" rel="stylesheet">
+</head>
+
+<body>
+  <div class="card border-0">
+    <a style="text-decoration: none;color: none;" href="{% url 'pdp' %}" class="card-link">
+      <img src="{% static 'image/nav/unsplash_178j8tJrNlc.png' %}" class="card-img-top" alt="...">
+      <div class="card-body">
+        <p class="card-text">John Doe</p>
+        <h5 class="card-title">SONY PXW-X200 Full Camera</h5>
+        <div class="card-address">
+          <p class="card-text">Ohio St. 16 H. 435 South Gate, California</p>
+        </div>
+        <div class="card-details mt-4">
+          <h5 class="card-price">$350</h5>
+          <div class="card-rating"> <img src="{% static 'image/nav/star_rate.png' %}" class="img" alt="...">4.8 </div>
+        </div>
+      </div>
+    </a>
+  </div>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+    crossorigin="anonymous"></script>
+</body>
+
+</html>

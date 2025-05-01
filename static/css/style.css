@@ -1,0 +1,1931 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Nunito+Sans:ital,opsz,wght@0,6..12,200..1000;1,6..12,200..1000&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Nunito+Sans:ital,opsz,wght@0,6..12,200..1000;1,6..12,200..1000&display=swap');
+
+body{
+    margin: 0;
+    padding: 0;
+    font-family: 'Nunito Sans', sans-serif;
+}
+.navbarbg {
+    background-color: #E6E6E6;
+}
+
+#id_username {
+    border: none;
+    border-bottom: 1px solid rgba(204, 204, 204, 1);
+    outline: none;
+    width: 100%;
+}
+
+.headings h2 {
+    font: montserrat;
+    font-weight: 700;
+    font-size: 57px;
+}
+
+.span_blue {
+    color: #005494;
+
+}
+
+.headings p {
+    font: montserrat;
+    font-weight: 700;
+    font-size: 42px;
+
+}
+
+.headings p span {
+    color: #005494;
+}
+
+.home-container {
+    max-width: 500px;
+    margin: auto;
+}
+
+.home-text {
+    font-family: Montserrat;
+    font-size: 16px;
+    font-weight: 400;
+    color: rgba(74, 82, 90, 1);
+}
+
+.home-col11 {
+    padding-right: 0%;
+}
+
+.home-display {
+    height: 500px;
+    background: linear-gradient(0deg, #F0F0F0, #F0F0F0),
+        linear-gradient(0deg, #EDF7FE, #EDF7FE);
+    position: relative;
+    top: -60px;
+    border-bottom-left-radius: 130px;
+}
+
+.custom-card112233 {
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    padding: 20px;
+    margin-bottom: 20px;
+    height: 100%;
+}
+
+
+
+.home-container11 {
+    max-width: 550px;
+    padding-top: 100px;
+    margin: auto;
+
+}
+
+.home-column {
+    text-align: center;
+}
+
+.home-subtitle {
+    color: #969696;
+}
+.card:hover .img_item_cover {
+    transform: scale(1.2) !important;
+    transition: transform 0.3s ease-in-out !important;
+  }
+
+.camera_page_s1 p {
+    font-family: Nunito Sans;
+    font-size: 14px;
+    font-weight: 600;
+    text-align: center;
+    color: white;
+
+}
+
+
+
+.max-width-container {
+    max-width: 500px;
+}
+
+.rent-highlight {
+    color: #005494;
+}
+
+.rent-description {
+    color: #969696;
+    line-height: 35px;
+}
+
+.mt-5-container {
+    padding-top: 100px;
+}
+
+.max-width-container {
+    max-width: 500px;
+    margin-left: auto;
+}
+
+.rent-description {
+    color: #969696;
+    line-height: 35px;
+}
+
+
+
+.inbox-link {
+    text-decoration: none;
+    color: white;
+}
+
+.inbox-button {
+    width: 198px;
+    height: 60px;
+    border-radius: 16px;
+    background: rgba(0, 84, 148, 1);
+}
+
+.inbox-button-text {
+    font-family: Poppins;
+    color: white;
+    font-size: 18px;
+    font-weight: 600;
+    margin: 0;
+}
+
+
+
+.access-container {
+    padding-top: 100px;
+}
+
+.access-content {
+    background: rgba(236, 247, 255, 1);
+    border-radius: 32px;
+    position: relative;
+}
+
+.access-text {
+    padding: 60px;
+    padding-top: 120px;
+}
+
+.access-text h1 {
+    font-family: Montserrat;
+    font-size: 40px;
+    font-weight: 600;
+    text-align: left;
+}
+
+.access-text p {
+    max-width: 400px;
+}
+
+
+
+
+.rental-reviews {
+    background: #ECF7FF;
+    padding: 50px;
+    margin-top: 100px;
+    margin-bottom: 100px;
+}
+
+.review-card {
+    padding: 20px;
+    background-color: white;
+    border-radius: 16px;
+}
+
+.review-header {
+    display: flex;
+}
+
+.review-header img {
+    border-radius: 50%;
+}
+
+.review-name {
+    color: #005494;
+}
+
+.review-quote {
+    font-style: italic;
+    color: rgba(150, 150, 150, 1);
+}
+
+.card-img {
+    position: relative;
+    top: -60px;
+}
+
+.card-link {
+    text-decoration: none;
+    color: black;
+}
+
+.card-text {
+    font-family: Poppins;
+    font-size: 10px;
+    font-weight: 500;
+    color: #969696;
+
+}
+
+.card-title {
+    font-family: Montserrat;
+    font-size: 17px;
+    font-weight: 600;
+    text-align: left;
+    color: #263238;
+
+}
+
+.card-body {
+    padding: 1rem;
+}
+
+.card-img-top {
+    width: 100%;
+    height: auto;
+}
+
+.card-details {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.card-details h5 {
+    font-weight: 800;
+
+}
+
+/* External CSS */
+.pdp-flex-container {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
+
+.pdp-heading {
+    font-family: Montserrat;
+    font-size: 24px;
+    font-weight: 700;
+    color: rgba(38, 50, 56, 1);
+}
+
+.pdp-paragraph {
+    font-family: Poppins;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 26px;
+    text-align: left;
+    color: rgba(204, 204, 204, 1);
+    max-width: 600px;
+}
+
+
+.card-rating {
+    display: flex;
+    align-items: center;
+}
+
+.smbut {
+    font-family: Poppins;
+    border-radius: 12px;
+    font-size: 18px;
+    font-weight: 600;
+    padding: 18px;
+    background-color: #005494;
+    border: none;
+}
+
+.card-rating img {
+    width: 20px;
+    height: auto;
+    margin-right: 5px;
+}
+
+
+.pdp-container {
+    padding: 20px;
+    border: 1px solid rgba(230, 230, 230, 1);
+    border-radius: 32px;
+}
+
+.pdp-inner {
+    margin-top: 3px;
+}
+
+.pdp-title {
+    color: rgba(38, 50, 56, 1);
+    font-size: large;
+    font-weight: 600;
+    max-width: 480px;
+    word-break: break-word;
+
+}
+
+.pdp-address {
+    font-family: Poppins;
+    font-size: 10px;
+    font-weight: 500;
+    text-align: left;
+}
+
+.pdp-info img {
+    height: 25px;
+}
+
+.pdp-info {
+    display: flex;
+    align-items: center;
+    margin-top: 3px;
+    gap: 10px;
+}
+
+.pdp-name {
+    color: #263238;
+    font-size: large;
+    gap: 10px;
+    margin-bottom: 0;
+}
+
+.pdp-name img {
+
+    width: 20px;
+    height: 20px;
+}
+
+.pdp-rating {
+    padding-top: 10px;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    padding-bottom: 10px;
+}
+
+.pdp-rating p {
+    margin-bottom: 0;
+}
+
+
+.pdp-rating-reviews {
+    font-family: Poppins;
+    font-size: 14px;
+    font-weight: 400;
+    color: rgba(204, 204, 204, 1);
+}
+
+.pdp-pricing {
+    margin-top: 2px;
+}
+
+.pdp-price-container {
+    padding: 12px;
+    border: 1px solid rgba(230, 230, 230, 1);
+    border-radius: 16px;
+}
+.pdp-price-container:hover{
+    background-color: #005494;
+    color: #fff;
+}
+.pdp-price-container:hover span{
+    color: #fff;
+}
+.pdp-price-container.priceactive{
+    background-color: #005494;
+    color: #fff;
+}
+.pdp-price-container.priceactive span{
+    color: #fff;
+}
+.pdp-price-type {
+    font-weight: bold;
+}
+
+.pdp-price-value {
+    margin-top: 5px;
+    word-break: break-all;
+}
+
+.pdp-price-value span {
+    color: #005494;
+}
+
+.pdp-check-btn {
+    margin-top: 4px;
+    color: white;
+    background: rgba(0, 84, 148, 1);
+    border: none;
+    border-radius: 16px;
+    padding: 16px;
+    font-family: Poppins;
+    font-size: 18px;
+    font-weight: 600;
+
+
+}
+
+
+
+
+.custom-card-text {
+    font-family: Poppins;
+    font-size: 10px;
+    font-weight: 500;
+    text-align: left;
+}
+
+.custom-card-title {
+    font-family: Montserrat;
+    font-size: 17px;
+    font-weight: 600;
+    text-align: left;
+    color: rgba(38, 50, 56, 1);
+    word-break: break-all;
+}
+
+.custom-card-description {
+    font-family: Poppins;
+    font-size: 10px;
+    font-weight: 500;
+    text-align: left;
+}
+
+.custom-card-category {
+    font-family: Poppins;
+    font-size: 10px;
+    font-weight: 500;
+    text-align: left;
+    margin-top: 0.5rem;
+}
+
+.card123 {
+    box-shadow: 0px 2px 42px 0px #B4B2B229;
+    padding: 30px;
+
+}
+
+.custom-card-rating {
+    display: flex;
+    align-items: center;
+    font-family: Poppins;
+    font-size: 10px;
+    font-weight: 500;
+}
+
+
+.newsletter {
+    margin-top: 100px;
+}
+
+
+
+.newsletter-info {
+    margin: auto;
+    max-width: 800px;
+    color: rgba(150, 150, 150, 1);
+}
+
+.privacy-policy {
+    color: #005494;
+}
+
+.newsletter-form {
+    padding-top: 10px;
+}
+
+.newsletter-input {
+    box-shadow: 0px 10.67px 56px 0px #22272F0A;
+    border: none;
+    border-radius: 16px;
+}
+
+.newsletter-disclaimer {
+    padding-bottom: 100px;
+    color: rgba(150, 150, 150, 1);
+    margin: auto;
+}
+
+
+
+.custom-text1122 {
+    color: #969696;
+    max-width: 500px;
+}
+
+.custom-button1122 {
+    border: 1px solid #005494;
+    padding: 10px;
+    border-radius: 12px;
+    color: #005494;
+}
+
+
+.camera_page_s1 {
+    background-color: #005494;
+    padding: 20px;
+    top: 200px;
+    left: 150px;
+    gap: 0px;
+    opacity: 0px;
+
+    border-radius: 32PX;
+}
+
+.camera_page_s1 h1 {
+    font-family: Montserrat;
+    font-size: 40px;
+    font-weight: 800;
+    text-align: center;
+    color: white;
+    max-width: 700px;
+    margin: auto;
+}
+
+
+.camera_section2 h1 {
+    font-family: Montserrat;
+    font-size: 32px;
+    font-weight: 600;
+    line-height: 48px;
+    text-align: left;
+}
+
+.camera_section2 {
+    font-family: Poppins;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 24px;
+    text-align: left;
+
+}
+
+.text_item {
+    border: 2px solid rgba(230, 230, 230, 1)
+}
+
+.ben {
+    font-family: Montserrat;
+    font-size: 18px;
+    font-weight: 500;
+    line-height: 32px;
+    text-align: left;
+
+}
+
+.asd {
+    font-family: Poppins;
+    font-size: 14px;
+    font-weight: 400;
+    text-align: center;
+
+    color: rgba(150, 150, 150, 1);
+
+
+
+
+}
+
+.asdf {
+    font-family: Poppins;
+    font-size: 12px;
+    font-weight: 600;
+    text-align: center;
+    color: rgba(150, 150, 150, 1);
+
+}
+
+.asdfg {
+
+    font-family: Poppins;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 26px;
+    text-align: left;
+
+}
+
+
+
+
+
+.check_out {
+    font-family: Poppins;
+    font-size: 15px;
+    font-weight: 600;
+    line-height: 45px;
+    text-align: left;
+
+}
+
+.check_oder {
+    border-radius: 16px;
+    border: 1px solid rgba(212, 212, 212, 1)
+}
+
+.check_box {
+    padding: 20px;
+}
+
+.check_oder h1 {
+    font-family: Poppins;
+    font-size: 18px;
+    font-weight: 600;
+    color: rgba(0, 84, 148, 1);
+}
+
+.check_oder h4 {
+    margin-left: auto;
+    font-family: Poppins;
+    font-size: 20px;
+    font-weight: 400;
+    color: rgba(0, 84, 148, 1);
+}
+
+.check_oder h3 {
+    font-family: Poppins;
+    font-size: 20px;
+    font-weight: 400;
+    color: rgba(38, 50, 56, 1);
+}
+
+.check_oder h2 {
+    font-family: Poppins;
+    font-size: 9px;
+    font-weight: 400;
+    color: rgba(150, 150, 150, 1);
+}
+
+.before_rental {
+    font-family: Montserrat;
+    font-size: 33px;
+    font-weight: 600;
+}
+
+.para_before_rental {
+    font-family: Montserrat;
+    font-size: medium;
+    font-weight: 500;
+    color: rgba(0, 84, 148, 0.8);
+}
+
+.para_before_rental span {
+    color: rgba(150, 150, 150, 1);
+}
+
+.left_img_main {
+    position: relative;
+    width: 100%;
+    max-width: 340px;
+    margin: auto;
+
+}
+
+.left_img_main img {
+    height: 250px;
+    position: absolute;
+    left: -20px;
+    top: -50px;
+}
+
+.right_img_main {
+    position: relative;
+    width: 100%;
+    max-width: 340px;
+    margin: auto;
+}
+
+.right_img_main img {
+    height: 250px;
+    position: absolute;
+    left: -20px;
+    top: -50px;
+
+}
+
+.bg_div {
+    height: 200px;
+    width: 100%;
+    max-width: 300px;
+    background: rgba(236, 247, 255, 1);
+    border-radius: 12px;
+    margin-left: auto;
+}
+
+
+
+.list_item_h {
+    color: rgba(38, 50, 56, 1);
+    font-family: Poppins;
+    font-size: 32px;
+    font-weight: 600;
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+.check_out {
+    background-color: #f9f9f9;
+    padding: 20px;
+    border-radius: 5px;
+}
+
+.form-group {
+    margin-bottom: 20px;
+}
+
+label {
+    display: block;
+    font-weight: bold;
+}
+
+.home_ma h1 {
+    font-family: Poppins;
+    font-size: 24px;
+    font-weight: 600;
+    text-align: center;
+
+}
+
+.home_ma h2 {
+    font-family: Poppins;
+    font-size: 16px;
+    font-weight: 400;
+    text-align: center;
+}
+
+
+.signpage {
+    margin-top: 80px;
+    width: 100%;
+    max-width: 500px;
+    border-radius: 32px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    box-shadow: 0px 10px 40px 0px rgba(0, 0, 0, 0.1);
+    background-color: white;
+}
+
+.signup_h1 {
+    font-family: Montserrat;
+    font-size: 32px;
+    font-weight: 600;
+
+
+}
+
+.input_field {
+    width: 100%;
+    border: none;
+    background-color: white;
+}
+
+
+.email_label {
+
+
+    font-family: Poppins;
+    font-size: 12px;
+    font-weight: 400;
+    line-height: 24px;
+    text-align: left;
+
+    color: rgba(109, 109, 109, 1);
+
+
+
+}
+
+.profile-img {
+    max-width: 200px;
+    height: auto;
+    border-radius: 50%;
+}
+
+/* styles.css */
+
+.reset-button {
+    width: 198px;
+    height: 60px;
+    border-radius: 16px;
+    background: rgba(0, 84, 148, 1);
+}
+
+.reset-button h1 {
+    font-family: Poppins;
+    color: white;
+    font-size: 18px;
+    font-weight: 600;
+    margin: 0;
+}
+
+
+
+
+.custom-sign-in-btn {
+    font-family: 'Poppins', sans-serif;
+    font-size: 16px;
+    font-weight: 600;
+    line-height: 32px;
+    text-align: center;
+    background-color: #005494;
+    color: white;
+}
+
+.hero h1 {
+    font-family: Montserrat;
+    font-size: 40px;
+    font-weight: 800;
+    color: white;
+}
+
+.hero {
+    background: rgba(0, 84, 148, 0.8);
+    border-radius: 32px;
+
+}
+
+.hero h6 {
+    font-family: Nunito Sans;
+    font-weight: 600;
+    color: white;
+
+}
+
+#id_password {
+    border: none;
+    border-bottom: 1px solid rgba(204, 204, 204, 1);
+    outline: none;
+    width: 100%;
+
+}
+
+#id_email {
+    border: none;
+    border-bottom: 1px solid rgba(204, 204, 204, 1);
+    outline: none;
+    width: 100%;
+}
+
+.not_account_heading {
+    font-family: Poppins;
+    font-size: 14px;
+    font-weight: 500;
+    text-align: center;
+
+}
+
+#id_first_name {
+    border: none;
+    border: none;
+    border-bottom: 3px solid rgba(0, 84, 148, 1);
+    outline: none;
+    width: 100%;
+}
+
+
+
+#id_last_name {
+    border: none;
+    border-bottom: 1px solid rgba(204, 204, 204, 1);
+    outline: none;
+    width: 100%;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+.search-rent-btn {
+
+
+
+    font-family: Poppins;
+    font-size: 18px;
+    font-weight: 600;
+    color: white;
+
+    background: rgba(0, 84, 148, 1);
+}
+
+
+
+
+.title-label {
+    font-family: Poppins;
+    font-weight: 500;
+}
+
+.rental-label {
+    font-family: Poppins;
+
+    font-weight: 500;
+}
+
+.period-label {
+    font-family: Poppins;
+    font-weight: 500;
+
+}
+
+.category-label {
+    font-family: Poppins;
+    font-weight: 500;
+    text-align: left;
+}
+
+.value-label {
+    font-family: Poppins;
+
+    font-weight: 500;
+
+}
+
+
+
+
+
+
+
+
+
+
+.form-1 {
+
+    width: 100%;
+    font-weight: 400;
+    ;
+
+    height: 50px;
+    border: 1px solid rgba(212, 212, 212, 1)
+}
+
+
+
+.secound {
+    display: none;
+}
+
+
+.custom1-button {
+    padding: 10px;
+    border-radius: 8px;
+    font-family: Poppins;
+    font-size: 16px;
+    font-weight: 600;
+    color: white;
+    background-color: #005494;
+    border: none;
+}
+
+
+.location-label {
+    font-family: Poppins;
+
+    font-weight: 500;
+
+}
+
+.description-label {
+    font-family: Poppins;
+
+    font-weight: 500;
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+.king-container {
+    font-family: Poppins;
+    font-size: 24px;
+    font-weight: 600;
+}
+
+.king-heading {
+    font-family: Poppins;
+    font-size: 22px;
+    font-weight: 600;
+}
+
+.king-image {
+    width: 166px;
+    height: 166px;
+}
+
+.king-name {
+    font-family: Poppins;
+    font-size: 22px;
+    font-weight: 600;
+}
+
+.king-email {
+    font-family: Poppins;
+    font-size: 16px;
+    font-weight: 400;
+    color: rgba(150, 150, 150, 1);
+}
+
+
+
+
+
+
+
+
+.profile_image .img1 {
+    width: 100%;
+    /* Ensures the image fills the circle */
+    height: 100%;
+    /* Ensures the image fills the circle */
+}
+
+
+.profile_image {
+    width: 136px;
+    /* Adjust the width as needed */
+    height: 136px;
+    /* Adjust the height as needed */
+    border: 0px solid black;
+    border-radius: 50%;
+    overflow: hidden;
+    /* Ensures image stays within the circle */
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+.s1_button {
+    width: 198px;
+    height: 60px;
+    border-radius: 16px;
+    background: rgba(0, 84, 148, 1);
+    position: relative;
+    left: -20px;
+    border: none;
+    color: white;
+}
+
+
+
+.center2 {
+
+    margin-top: 180px;
+
+
+
+
+}
+
+#id_password1 {
+    border: none;
+    border-bottom: 1px solid rgba(204, 204, 204, 1);
+    outline: none;
+    width: 100%;
+}
+
+#id_password2 {
+    border: none;
+    border-bottom: 1px solid rgba(204, 204, 204, 1);
+    outline: none;
+    width: 100%;
+}
+
+.checkh1 {
+    font-family: Poppins;
+    font-size: 25px;
+    font-weight: 600;
+    line-height: 45px;
+    text-align: left;
+
+
+}
+
+.too {
+    font-family: Poppins;
+    font-size: 16px;
+    color:
+        rgba(109, 109, 109, 1);
+}
+
+.too input {
+    width: 492px;
+    height: 70px;
+    top: 637px;
+    left: 150px;
+    gap: 0px;
+    border: 1px solid #D4D4D4;
+    border-radius: 12px;
+}
+
+.sss1 {
+    max-width: 700px;
+    margin: auto;
+}
+
+.sss1 h1 {
+    font-family: Montserrat;
+    font-size: 47px;
+    font-weight: 700;
+    line-height: 81.67px;
+    text-align: left;
+}
+
+.sss1 input[type="text"] {
+    border-top-left-radius: 10px;
+    border-bottom-left-radius: 10px;
+    height: 80px;
+    box-shadow: 0px 19px 29px 0px #3E357824;
+    border: none;
+    padding-left: 40px;
+}
+
+.sss1 button {
+    position: sticky;
+    height: 80px;
+    font-weight: 600;
+}
+
+
+
+.pal {
+    font-family: Montserrat;
+    font-size: 36px;
+    font-weight: 600;
+
+    text-align: center;
+}
+
+
+
+
+/* External CSS */
+.profile-heading {
+    font-family: Poppins;
+    font-size: 24px;
+    font-weight: 600;
+}
+
+.profile-subheading {
+    font-family: Poppins;
+    font-size: 16px;
+    font-weight: 400;
+    color: rgba(150, 150, 150, 1);
+}
+
+.profile-name {
+    font-family: Poppins;
+    font-size: 22px;
+    font-weight: 600;
+}
+
+.profile-email {
+    font-family: Poppins;
+    font-size: 16px;
+    font-weight: 400;
+    color: rgba(150, 150, 150, 1);
+}
+
+.profile-statistics {
+    font-family: Poppins;
+    font-size: 16px;
+    font-weight: 400;
+    color: rgba(150, 150, 150, 1);
+}
+
+.profile-statistics-value {
+    font-family: Poppins;
+    font-size: 40px;
+    font-weight: 500;
+}
+
+
+
+.profile-statistics-info {
+    font-family: Poppins;
+    font-size: 16px;
+    font-weight: 400;
+    color: rgba(150, 150, 150, 1);
+}
+
+.profile-statistics-number {
+    font-family: Poppins;
+    font-size: 12px;
+    font-weight: 400;
+    color: rgba(150, 150, 150, 1);
+}
+
+.profile-box {
+    padding: 3px;
+    border: 1px solid rgba(234, 234, 234, 1);
+    border-radius: 10px;
+    padding: 10px;
+}
+
+.profile-row {
+    display: flex;
+    align-items: center;
+}
+
+.profile-img {
+    margin-top: 5px;
+}
+
+.profile-image {
+    margin-top: 5px;
+}
+
+.profile-preview-image {
+    width: 100px;
+    border-radius: 50%;
+    height: 100px;
+    object-fit: cover;
+    border: 1px solid black;
+}
+
+.profile-column {
+    padding: 3px;
+    border: 1px solid rgba(234, 234, 234, 1);
+    border-radius: 10px;
+}
+
+.profile-number {
+    margin-top: 2px;
+}
+
+
+.profile-link {
+    text-decoration: none;
+    color: white;
+}
+
+
+.profile-button {
+    width: 198px;
+    height: 60px;
+    border-radius: 16px;
+    background: rgba(0, 84, 148, 1);
+    border: none;
+}
+
+.profile-button-text {
+    font-family: Poppins;
+    color: white;
+    font-size: 18px;
+    font-weight: 600;
+    margin: 0;
+}
+
+.inbox_heading h1 {
+    font-family: Ubuntu;
+    font-size: 28.18px;
+    font-weight: 700;
+    line-height: 32.38px;
+    text-align: left;
+
+}
+
+.profile-form {
+    border: 1px solid rgba(234, 234, 234, 1);
+    border-radius: 10px;
+    padding: 30px;
+}
+
+.profile-label {
+    font-family: Poppins;
+    font-size: 12px;
+    font-weight: 500;
+
+}
+
+.carrd_img {
+    border-radius: 12px;
+    height: 180px;
+    width: 300px;
+}
+
+.profile-input {
+    border-radius: 10px;
+    padding-left: 10px;
+}
+
+.new_item h1 {
+    font-family: Poppins;
+    font-size: 24px;
+    font-weight: 600;
+
+    color: #969696;
+
+}
+
+
+
+
+
+
+
+
+
+
+.msg_search_form {
+    padding-top: 12px;
+    padding-bottom: 8px;
+}
+
+.msg_search_form input {
+    border: none;
+    outline: none;
+    border: 1px solid #E6E6E6;
+    border-radius: 50px;
+    padding-left: 10px;
+    width: 244px;
+    height: 40px;
+    font-family: 'Raleway';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 12px;
+    line-height: 14px;
+    color: #585858;
+}
+
+.msg_person {
+    display: flex;
+    justify-content: space-between;
+    padding-top: 21px;
+    align-items: center;
+    cursor: pointer;
+}
+
+.msg_left {
+    display: flex;
+    align-items: center;
+}
+
+.sender_img img {
+    width: 33px;
+    height: 33px;
+    border-radius: 50%;
+    margin-right: 18px;
+}
+
+.sender_info p,
+.sender_info h6,
+.sender_notification_time p,
+.sender_notification_time h6 {
+    font-family: 'Quicksand';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 18px;
+    color: #000000;
+}
+
+.sender_info h6 {
+    font-size: 12px;
+    line-height: 14px;
+    font-weight: 400;
+    padding-top: 7px;
+}
+
+.sender_notification_time p {
+    padding-left: 28px !important;
+    font-weight: 400;
+    font-size: 10px;
+    line-height: 12px;
+    color: rgba(88, 88, 88, 0.82);
+}
+
+.sender_notification_time h6 {
+    display: flex;
+    justify-content: end;
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 18px;
+    color: #FA2104;
+}
+
+.chat_p {
+    display: flex;
+    padding: 1px 0px 19px 0px;
+    margin-left: 18px;
+    margin-right: 6px;
+    align-items: center;
+    border-bottom: 1px solid #E6E6E6;
+}
+
+.chat_p h5 {
+    font-style: normal;
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 16px;
+    color: #000000;
+    padding-left: 18px !important;
+}
+
+.mesg_date {
+    padding-top: 20px;
+    padding-bottom: 42px;
+}
+
+.mesg_date p {
+    font-weight: 300;
+    font-size: 11px;
+    line-height: 14px;
+    color: #585858;
+    text-align: center;
+    position: relative;
+    padding-right: 30px !important;
+}
+
+.msg_container {
+    max-width: 628px;
+    margin: 0 auto;
+}
+
+.mesg_date p::before {
+    content: '';
+    position: absolute;
+    left: 12px;
+    width: 199px;
+    height: 1px;
+    top: 5px;
+    background: rgba(88, 88, 88, 0.82);
+}
+
+.mesg_date p::after {
+    content: '';
+    position: absolute;
+    right: 0px;
+    width: 249px;
+    height: 1px;
+    top: 5px;
+    background: rgba(88, 88, 88, 0.82);
+}
+
+.scrol_box {
+    height: 400px;
+    overflow-y: auto;
+    padding-right: 10px;
+}
+
+.scrol_box::-webkit-scrollbar {
+    width: 5px;
+    height: 10px;
+    background-color: lightgrey;
+}
+
+.scrol_box::-webkit-scrollbar-track {
+    background-color: lightgrey;
+}
+
+.scrol_box::-webkit-scrollbar-thumb {
+    background-color: #005494;
+    border-radius: 40px;
+}
+
+.reciever_message {
+    max-width: 362px;
+    background: #D9D9D9;
+    box-shadow: 0px 0px 2px rgba(0, 0, 0, 0.25);
+    border-radius: 50px;
+    padding: 13px 10px 11px 10px;
+}
+
+.reciever_message p,
+.sen_message p {
+    font-weight: 300;
+    font-size: 14px;
+    line-height: 18px;
+    color: #000000;
+    word-break: break-all;
+    padding: 8px 5px 7px 10px !important;
+}
+
+.msg_t p {
+    display: flex;
+    justify-content: center;
+    padding-top: 17px !important;
+    padding-left: 53px !important;
+    font-weight: 300;
+    font-size: 11px;
+    line-height: 14px;
+    color: #585858;
+}
+
+.rec {
+    display: flex;
+    justify-content: end;
+    padding-top: 0px;
+    flex-direction: column;
+    align-items: end;
+}
+
+.sen_message {
+    width: 262px;
+    background: #005494;
+    border-radius: 50px;
+    padding: 13px 10px 11px 17px !important;
+}
+
+.sen_message p {
+    font-weight: 600;
+    font-size: 14px;
+    line-height: 18px;
+    color: white;
+    word-break: break-all;
+}
+
+.sen_message img,
+#rec_mes img {
+    width: 100%;
+    border-radius: 20px;
+    display: flex;
+    justify-content: center;
+    padding: 7px;
+}
+
+.rec_t p {
+    display: flex;
+    justify-content: end;
+}
+
+.open_chat {
+    border-left: 1px solid #D9D9D9;
+}
+
+.send_msg {
+    max-width: 628px;
+    background: #FFFFFF;
+    border: 1px solid #E6E6E6;
+    border-radius: 9px;
+    padding: 0px 22px 0px 8px;
+    display: flex;
+    justify-content: space-between;
+    margin-top: 34px;
+    margin-left: 13px;
+}
+
+.type_msg {
+    width: 100%;
+}
+
+.send_msg textarea {
+    border: none;
+    outline: none;
+    resize: none;
+    width: 100%;
+}
+
+#uploadFilePreview {
+    width: 100%;
+    margin: 5px;
+}
+
+.snd_btn button {
+    border: none;
+    outline: none;
+    background: none;
+    width: 90px;
+    height: 26px;
+    background: #005494;
+    border-radius: 50px;
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
+.snd_btn {
+    padding-top: 13px;
+    display: flex;
+    align-items: center;
+    padding-bottom: 10px;
+}
+
+.msg_emojis {
+    padding-top: 10px;
+    width: 0px;
+    height: 0px;
+}
+
+.msg_emojis img:first-child {
+    margin-right: 12px;
+    margin-left: 7px;
+}
+
+.lefcol {
+    margin-right: 40px;
+}
+
+/* three dots */
+.showLeft {
+    background-color: white !important;
+    border: 1px solid white !important;
+    text-shadow: white !important;
+    color: black !important;
+    padding: 10px;
+}
+.icons li {
+    background: none repeat scroll 0 0 black;
+    height: 7px;
+    width: 7px;
+    line-height: 0;
+    list-style: none outside none;
+    margin-right: 15px;
+    margin-top: 3px;
+    vertical-align: top;
+    border-radius: 50%;
+    pointer-events: none;
+}
+.btn-left {
+    left: 0.4em;
+}
+.btn-right {
+    right: 0.4em;
+}
+.btn-left,
+.btn-right {
+    position: absolute;
+    top: -3.76em;
+}
+img.message_image {
+    width: 100%;
+    border-radius: 20px;
+    display: flex;
+    justify-content: center;
+    padding: 7px;
+}
+#img_src {
+    width: 33px;
+    height: 33px;
+    border-radius: 50%;
+}
+/* PDP Page Style ========== */
+.pdp_tabs_main_div .nav-pills {
+    border-bottom: 2px solid rgba(230, 230, 230, 1)
+}
+.pdp_tabs_main_div .nav-item {
+    width: 100%;
+    max-width: 150px;
+}
+.pdp_tabs_main_div .nav-pills .nav-link {
+    border-radius: 0px;
+    border-bottom: 2px solid transparent;
+    color: rgba(204, 204, 204, 1);
+    width: 100%;
+    transform: scale(1.1);
+    font-weight: 600;
+}
+.pdp_tabs_main_div .nav-pills .nav-link.active {
+    background-color: transparent !important;
+    color: #000000;
+    border-bottom: 2px solid #005494;
+    font-weight: 600;
+}
+.img_my_rental {
+    width: 100%;
+    height: 200px;
+    border-radius: 12px;
+    object-fit: cover;
+}
+.button_my_item {
+
+    outline: none !important;
+    width: 100%;
+    height: 60px;
+    border-radius: 16px;
+    background: rgba(0, 84, 148, 1);
+}
+.h1_my_items_edit {
+    font-family: Poppins;
+    color: white;
+    font-size: 18px;
+    font-weight: 600;
+    margin: 0;
+}
+.delect_item_my_items {
+    width: 100%;
+    height: 60px;
+    border-radius: 16px;
+    background: rgba(255, 63, 100, 1);
+}
+.my_item_delect_item {
+    font-family: Poppins;
+    color: white;
+    font-size: 18px;
+    font-weight: 600;
+    margin: 0;
+
+}
+@media (max-width:1324px) {
+    .msg_container {
+        padding: 10px;
+    }
+
+    .msg_search_form input {
+        width: 215px;
+    }
+}
+@media (max-width:924px) {
+
+    .mesg_date p::before,
+    .mesg_date p::after {
+        width: 150px;
+    }
+}
+@media (max-width:767px) {
+    .open_chat {
+        border: none;
+    }
+
+    .dropdown {
+        display: block;
+    }
+
+    .mesg_date p::before,
+    .mesg_date p::after {
+        width: 100px;
+    }
+
+    .rec {
+        padding-top: 10px;
+    }
+
+    .msg_t p {
+        display: block;
+        text-align: right;
+        padding-bottom: 5px !important;
+    }
+
+    .lefcol {
+        margin-right: 0px;
+        padding: 12px;
+    }
+
+    .msg_search_form input {
+        width: 100%;
+    }
+
+    .messages_box {
+        padding: 11px 9px 16px 9px !important;
+    }
+
+    .lefcol {
+        display: none;
+        transition: 0.4s all ease-in-out;
+    }
+
+    .show {
+        display: block;
+        transition: 0.4s all ease-in-out;
+    }
+}
+@media (max-width:425px) {
+
+    .mesg_date p::before,
+    .mesg_date p::after {
+        display: none;
+    }
+
+    .open_chat {
+        padding: 10px;
+    }
+
+    .sen_message {
+        width: 220px;
+    }
+
+    .send_msg {
+        display: block;
+    }
+}
+
+
+
+
+
+@media (max-width: 992px) {
+    .roo {
+
+        flex-direction: column-reverse;
+    }
+
+    .img-coin {
+        flex-direction: column;
+    }
+}
+
+@media (max-width: 750px) {
+    .inbox {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .inbox-button {
+        margin-bottom: 10px;
+        /* Adjust spacing between buttons */
+    }
+}
+
+@media (max-width: 786px) {
+    .search-button {
+        padding-top: 5px;
+    }
+
+    .roo {
+
+        flex-direction: column-reverse;
+    }
+
+    .display1 {
+        display: none;
+    }
+
+    .headings h2 {
+        font: montserrat;
+        font-weight: 700;
+        font-size: 30px;
+    }
+
+    .right_img_main img {
+
+        top: 0;
+
+    }
+
+    .signpage {
+        margin-top: 233px;
+    }
+
+    .camera_page_s1 h1 {
+        font-size: 25px;
+    }
+
+    .s1_button {
+        width: 100px;
+
+    }
+
+}
+
+
+
+
+
+
+
