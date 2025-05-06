@@ -40,8 +40,8 @@ INSTALLED_APPS = [
 
 
 ]
-MEDIA_URL = '/media/'
-MEDIA_ROOT = os.path.join(BASE_DIR, 'media')
+
+
 
 
 MIDDLEWARE = [
@@ -137,3 +137,27 @@ DEFAULT_AUTO_FIELD = 'django.db.models.BigAutoField'
 
 STATIC_URL = '/static/'
 STATIC_ROOT = os.path.join(BASE_DIR, 'staticfiles')
+
+
+
+
+import cloudinary
+import cloudinary.uploader
+from cloudinary.utils import cloudinary_url
+DEFAULT_FILE_STORAGE = 'cloudinary_storage.storage.MediaCloudinaryStorage'
+
+# Configuration       
+cloudinary.config( 
+    cloud_name = "dhkegylx0", 
+    api_key = "547488152555662", 
+    api_secret = "Ff4fMIX9YMAukwHCO_n4_vPLG8M", # Click 'View API Keys' above to copy your API secret
+    secure=True
+)
+
+
+
+
+
+
+
+

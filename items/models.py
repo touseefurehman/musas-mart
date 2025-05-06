@@ -2,12 +2,13 @@ from django.db import models, transaction
 import uuid
 import os
 from multiselectfield import MultiSelectField
+from cloudinary.models import CloudinaryField
 
 
 class ItemCategory(models.Model):
     name = models.CharField(max_length=255)
     description = models.TextField(blank=True, null=True)
-    image = models.ImageField(upload_to='category_of_item/', blank=True, null=True)        
+    image = CloudinaryField('image')  # CloudinaryField to use Cloudinary storage
 
     def __str__(self):
         return self.name
@@ -43,9 +44,9 @@ class Product(models.Model):
     size = models.CharField(max_length=1, choices=SIZE_CHOICES, default='M')  # ✅ Add this line
 
     description = models.TextField(max_length=200000000)
-    image = models.ImageField(upload_to='Product_Image/', blank=True, null=True) 
-    image2 = models.ImageField(upload_to='Product_Image/', blank=True, null=True)    
-    image3 = models.ImageField(upload_to='Product_Image/', blank=True, null=True)        
+    image = CloudinaryField('image1')
+    image2 = CloudinaryField('image2')   
+    image3 = CloudinaryField('image3')       
 
     def __str__(self):
         return self.title

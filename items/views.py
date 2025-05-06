@@ -22,6 +22,27 @@ from django.http import JsonResponse
 from django.core.paginator import Paginator
 from .models import Product
 import random
+import cloudinary.uploader
+from django.http import JsonResponse
+
+
+
+
+
+
+def upload_image_view(request):
+    if request.method == 'POST' and request.FILES.get('image'):
+        uploaded_file = request.FILES['image']
+        result = cloudinary.uploader.upload(uploaded_file, public_id="test_image")
+        return JsonResponse({'url': result['secure_url']})
+    return JsonResponse({'error': 'No file uploaded'}, status=400)
+
+
+
+
+
+
+
 
 def random_products(request):
     query = request.GET.get('q', '')  # Get the search query
