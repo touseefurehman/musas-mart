@@ -1,8 +1,8 @@
 /* Light Grey Theme for Django Admin */
 :root {
-    --primary-bg: #f8f9fa;  /* Light Grey */
-    --secondary-bg: #e9ecef; /* Softer Grey */
-    --text-color: #343a40;   /* Dark Grey for Contrast */
+    --primary-bg:  #F4F4F4;  /* Light Grey */
+    --secondary-bg:  #F4F4F4; /* Softer Grey */
+    --text-color:   #F4F4F4;   /* Dark Grey for Contrast */
 }
 body, .module {
     background-color: var(--primary-bg) !important;
@@ -23,10 +23,13 @@ body, .module {
     color: white !important;
 } 
 
-a {
-    color: #495057 !important;
-}
+
 
 a:hover {
-    color: #212529 !important;
+    color: #3F51B5 !important;
+}
+
+
+nav .breadcrumbs{
+    background-color: #3F51B5 !important;
 }

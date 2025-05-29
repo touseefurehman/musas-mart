@@ -238,3 +238,22 @@ def checkout(request, product_item_id):
         })
 
     return render(request, 'checkout.html', {'rental_item_instance': rental_item_instance})
+
+
+
+
+
+
+
+
+    
+    
+def privacy(request):
+
+    return render(request, 'privacy.html')
+
+
+    
+def term(request):
+
+    return render(request, 'term.html')

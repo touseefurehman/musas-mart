@@ -12,6 +12,9 @@ path('track', views.track, name='track'),
 path('checkout/<int:product_item_id>/', views.checkout, name='checkout'),
 path('pdp/<int:id_cat>/<int:rental_item_id>', views.pdp, name='pdp'),
 path('upload/', views.upload_image_view, name='upload_image'),
+path('term/', views.term, name='term'),
+path('privacy/', views.privacy, name='privacy'),
+
 
 ]
 if settings.DEBUG:
