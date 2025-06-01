@@ -4,28 +4,129 @@
 <style>
     .card:hover {
         transform: translateY(-10px); /* move up by 3px */
-      }        
+      }       
+      
+      .pagination .page-link {
+        color: #634C9F;
+        border: 1px solid #634C9F;
+      }
+      
+      .pagination .page-item.active .page-link,
+      .pagination .page-link:hover {
+        background-color: #634C9F;
+        color: white;
+        border-color: #634C9F;
+      }
+      
+      .pagination .page-item.disabled .page-link {
+        color: #aaa;
+        background-color: #f8f9fa;
+        border: 1px solid #dee2e6;
+      }
 </style>
- <div class="container mt-4">
-    <p>
-        <a href="{% url 'Category' %}" style="text-decoration: none; font-family: Poppins;
-        font-size: 16px; font-weight: 600; line-height: 32px; text-align: left;
-        color: rgba(109, 109, 109, 1);">Home</a>
-    </p>
 
+
+<div class="hero112" style="background:linear-gradient(45deg, #B29CFF ,#634C9F);">
+    
+    
+    
+    <div class="container">
+                        <div class="row">
+                            <div class="col-lg-6">
+                                <div class="pt-5 pb-5">
+
+                                    
+                                    
+
+                                <p style="background: linear-gradient(90deg, rgba(22, 163, 74, 0.5) 0%, rgba(34, 197, 94, 0) 60%); color: #166534; border-radius: 12px;" class="mt-5 p-3"><b> Weekend Discount </b></p>
+                              
+                              
+                                
+                                
+                                <p style="font-size: 58px; color: #39245F;font-weight: 900; " class="">
+                                Shopping with us for
+                                better quality and the
+                                best price
+                            </p>
+                            <p style="font-weight: 700; font-size: 16px ; max-width: 430px; color: #030712;">
+                                We have prepared special discounts for you on grocery products.
+                                Don't miss these opportunities...
+                            </p>
+                            <div class="d-flex gap-5">
+
+                                <button class="btn" style="background-color: #634C9F; color: white;">
+                                    Shop Now
+                                </button>
+                                <div class="">
+
+                                    <h6 style="color: red; font-weight: 900;">
+                                        PKR
+                                    </h6>
+                                    <p style="font-size: 12px;">
+                                        Don't miss this limited time offer.
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                        </div>
+
+                            <div class="col-lg-6">
+                                
+                            </div>
+                        </div>
+
+
+
+    </div>
+
+
+
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+ <div class="container mt-4">
     <form id="search-form" method="GET" action="{% url 'random_products' %}">
 
-        <div class="d-flex">
-        <input type="text" name="q" id="search-input" placeholder="Search products..." class="form-control">
-        <button type="submit" class="btn " style="background-color: black;color: white;">Search</button>
+        <div class="d-flex p-2" style="background-color: #F3F4F6;border-radius: 12px;">
+        <input type="text" name="q" id="search-input" placeholder="Search products..." class="form-control aaaaaaaaa" style="background-color: #F3F4F6; border: 0cap;">
+        <button type="submit" class="btn " style="background-color:#634C9F ;color: white;">Search</button>
     </div>
     </form>
 
+
+
+
+
+   
+
+ 
+
     <section class="category">
-        <div class="container camera_section2" style="margin-top: 100px;">
+        <div class="container camera_section2" style=";">
             <div style="display: flex; justify-content: space-between; flex-wrap: wrap;">
                 <div>
-                    <h1>Browse {{ category.name }}</h1>
+                    <h1>  Products {{ category.name }}</h1>
                 </div>
             </div>
         </div>
@@ -39,9 +140,17 @@
                     <div class="card" style=" box-shadow: 4px 4px 10px rgba(0, 0, 0, 0.5); /* Black shadow with opacity */">
                         <img loading="lazy" src="{{ product.image.url }}" class="card-img-top" style="max-width: 800px; height: 200px; object-fit: cover;" alt="{{ product.name }}">
                         <div class="card-body">
-                            <h5 class="card-title">{{ product.title }}</h5>
-                            <p class="card-text">PKR{{ product.price }}</p>
-                        </div>
+                            <div class="d-flex gap-5">
+
+                                <h5 class="card-title">{{ product.title }}</h5>
+                                <h5 class="d-flex-end" style="color: rgb(0, 114, 0);">
+                                   <b> In Stock </b>
+                                </h5>
+                            </div>
+                            <p class="card-text" data-price="{{ product.price }}">
+                                <span class="actual-price" style="color:#634C9F ; font-weight: bold; font-size: 16px;"></span>
+                                <span class="original-price" style="text-decoration: line-through; color: rgb(255, 0, 0);"></span>
+                              </p>                        </div>
                     </div>        </a>
 
                 </div>
@@ -59,7 +168,7 @@
                     </li>
                 {% endif %}
                 <li class="page-item disabled">
-                    <span class="page-link"> Page {{ page_obj.title }} of {{ page_obj.paginator.num_pages }} </span>
+                    <span class="page-link"> Page {{ page_obj.number }} of {{ page_obj.paginator.num_pages }} </span>
                 </li>
                 {% if page_obj.has_next %}
                     <li class="page-item">
@@ -116,5 +225,19 @@
         });
     });
 </script>
-
+<script>
+    document.addEventListener("DOMContentLoaded", function () {
+      const priceElements = document.querySelectorAll(".card-text");
+  
+      priceElements.forEach(function (el) {
+        const actualPrice = parseFloat(el.dataset.price);
+        const fakeIncrease = Math.floor(Math.random() * (40 - 10 + 1)) + 10;
+        const originalPrice = actualPrice + fakeIncrease;
+  
+        el.querySelector(".original-price").textContent = `PKR${originalPrice}`;
+        el.querySelector(".actual-price").textContent = `PKR${actualPrice}`;
+      });
+    });
+  </script>
+  
 {% endblock %}

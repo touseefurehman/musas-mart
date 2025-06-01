@@ -57,7 +57,7 @@ def random_products(request):
             return JsonResponse({'products': []})  # Return empty JSON response for AJAX
         return render(request, 'random_products.html', {'message': 'No products found.'})  # For normal page load
 
-    paginator = Paginator(products, 8)  # Paginate with 8 products per page
+    paginator = Paginator(products, 16)  # Paginate with 8 products per page
     page_number = request.GET.get('page')
     page_obj = paginator.get_page(page_number)
 
