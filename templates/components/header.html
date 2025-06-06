@@ -53,12 +53,11 @@
                 </li>
 
             </ul>
-            <form method="get" action="{% url 'search' %}">
 
            
             <form id="search-form" method="GET" action="{% url 'search' %}" class="d-flex ms-auto">
-                <div class="d-flex p-2" style="background-color:rgb(4, 4, 5); border-radius: 12px;">
-                  <input type="text" name="q" id="search-input" placeholder="Search products..." class="form-control" style="background-color: #F3F4F6; border: 0;">
+                <div class="d-flex p-1" style="background-color:#634C9F; border-radius: 12px;">
+                  <input type="text" name="q" id="search-input" placeholder="Search products..." class="form-control" style="background-color: #F3F4F6; border: 0; " required>
                   <button type="submit" class="btn" style="background-color: #634C9F; color: white;">Search</button>
                 </div>
               </form>
