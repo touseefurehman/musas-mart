@@ -107,6 +107,75 @@
 
  <div class="container mt-4">
    
+    <div class="pt-5">
+        <h3>
+           <b>Category</b>
+        </h4>
+
+<!-- Buttons -->
+<div class="d-flex justify-content-end align-items-center gap-3 ">
+    <button id="prevBtn" class="btn btn-" style="background-color: #634C9F;"><</button>
+    <button id="nextBtn" class="btn btn-pr" style="background-color: #634C9F;">></button>
+</div>
+
+<!-- Slider Wrapper -->
+<div class="overflow-hidden" style="width: 100%;">
+    <div id="categorySlider" class="d-flex" style="transition: transform 0.5s ease; gap: 1rem;">
+        {% for category in categories %}
+        <a href="{% url 'search_by_category' category.id %}" style="text-decoration: none; color: black;">
+            <div class="text-center pt-3 me-3 flex-shrink-0" style="width: 100px;">
+                <img src="{{ category.image.url }}" alt="" style="border-radius: 50px; height: 75px; width: 75px; object-fit: cover;">
+                <h6 class="mt-2">{{ category.name }}</h5>
+            </div>
+        </a>
+        {% endfor %}
+    </div>
+</div>
+
+<!-- JavaScript -->
+<script>
+    const slider = document.getElementById("categorySlider");
+    const prevBtn = document.getElementById("prevBtn");
+    const nextBtn = document.getElementById("nextBtn");
+
+    let scrollAmount = 0;
+    const itemWidth = 120; // adjust based on actual width + margins
+    const visibleItems = 4; // Number of items visible at once (optional)
+    const totalItems = slider.children.length;
+
+    nextBtn.addEventListener("click", () => {
+        const maxScroll = (totalItems - visibleItems) * itemWidth;
+        if (scrollAmount < maxScroll) {
+            scrollAmount += itemWidth;
+            slider.style.transform = `translateX(-${scrollAmount}px)`;
+        }
+    });
+
+    prevBtn.addEventListener("click", () => {
+        scrollAmount = Math.max(0, scrollAmount - itemWidth);
+        slider.style.transform = `translateX(-${scrollAmount}px)`;
+    });
+</script>
+
+
+
+
+    </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 <div class="p-5">
         

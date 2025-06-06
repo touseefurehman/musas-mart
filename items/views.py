@@ -48,6 +48,7 @@ def random_products(request):
     query = request.GET.get('q', '')  # Get the search query
     products = list(Product.objects.all())  # Get all products
     random.shuffle(products)  # Shuffle the products
+    categories = ItemCategory.objects.all()
 
     if query:
         products = [product for product in products if query.lower() in product.title.lower()]
@@ -73,7 +74,7 @@ def random_products(request):
         ]
         return JsonResponse({'products': products_data})
 
-    return render(request, 'random_products.html', {'page_obj': page_obj})
+    return render(request, 'random_products.html', {'page_obj': page_obj,'categories': categories })
 
 
 
