@@ -180,10 +180,13 @@ def my_item(request):
 def pdp(request, id_cat, rental_item_id):
     product = get_object_or_404(Product, pk=rental_item_id)  # Rename variable
     category_of_items = get_object_or_404(ItemCategory, id=id_cat)
-
+    all_products = Product.objects.exclude(id=product.id)
+    random_products = random.sample(list(all_products), min(4, all_products.count()))
+    
     return render(request, 'pdp.html', {
         'product': product,  # Use lowercase in context
-        "category_of_items": category_of_items
+        "category_of_items": category_of_items,
+        'random_products': random_products
     })
 
 
@@ -257,3 +260,14 @@ def privacy(request):
 def term(request):
 
     return render(request, 'term.html')
+
+
+
+
+from django.shortcuts import render
+from .models import Product 
+
+def searchs(request):
+    query = request.GET.get('q', '')
+    results = Product.objects.filter(title__icontains=query) if query else []
+    return render(request, 'search_results.html', {'query': query, 'results': results})

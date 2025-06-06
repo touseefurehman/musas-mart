@@ -1,0 +1,50 @@
+{% extends "base.html" %}
+{% load static %}
+{% block content %}
+
+<div class="container mt-4">
+  <h3>Search Results for "{{ query }}"</h3>
+
+  {% if results %}
+    <div class="row" id="product-list">
+      {% for product in results %}
+        <div class="col-xl-3 col-lg-4 col-md-6 col-sm-6 col-xxs-12 mb-4">
+          <a style="text-decoration: none;" href="{% url 'pdp' id_cat=product.Category_of_items.id rental_item_id=product.id %}">
+            <div class="card" style="box-shadow: 4px 4px 10px rgba(0, 0, 0, 0.5);">
+              <img loading="lazy" src="{{ product.image.url }}" class="card-img-top" style="max-width: 800px; height: 200px; object-fit: cover;" alt="{{ product.title }}">
+              <div class="card-body">
+                <div class="d-flex gap-5">
+                  <h5 class="card-title">{{ product.title }}</h5>
+                  <h5 style="color: rgb(0, 114, 0);"><b>In Stock</b></h5>
+                </div>
+                <p class="card-text" data-price="{{ product.price }}">
+                  <span class="actual-price" style="color:#634C9F; font-weight: bold; font-size: 16px;"></span>
+                  <span class="original-price" style="text-decoration: line-through; color: rgb(255, 0, 0);"></span>
+                </p>
+              </div>
+            </div>
+          </a>
+        </div>
+      {% endfor %}
+    </div>
+  {% else %}
+    <p class="alert alert-warning text-center">No products found.</p>
+  {% endif %}
+</div>
+
+<script>
+  document.addEventListener("DOMContentLoaded", function () {
+    const priceElements = document.querySelectorAll(".card-text");
+
+    priceElements.forEach(function (el) {
+      const actualPrice = parseFloat(el.dataset.price);
+      const fakeIncrease = Math.floor(Math.random() * (40 - 10 + 1)) + 10;
+      const originalPrice = actualPrice + fakeIncrease;
+
+      el.querySelector(".original-price").textContent = `PKR${originalPrice}`;
+      el.querySelector(".actual-price").textContent = `PKR${actualPrice}`;
+    });
+  });
+</script>
+
+{% endblock %}
