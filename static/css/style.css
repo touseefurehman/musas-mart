@@ -110,28 +110,7 @@ body{
     max-width: 500px;
 }
 
-.rent-highlight {
-    color: #005494;
-}
 
-.rent-description {
-    color: #969696;
-    line-height: 35px;
-}
-
-.mt-5-container {
-    padding-top: 100px;
-}
-
-.max-width-container {
-    max-width: 500px;
-    margin-left: auto;
-}
-
-.rent-description {
-    color: #969696;
-    line-height: 35px;
-}
 
 
 
@@ -183,38 +162,6 @@ body{
     max-width: 400px;
 }
 
-
-
-
-.rental-reviews {
-    background: #ECF7FF;
-    padding: 50px;
-    margin-top: 100px;
-    margin-bottom: 100px;
-}
-
-.review-card {
-    padding: 20px;
-    background-color: white;
-    border-radius: 16px;
-}
-
-.review-header {
-    display: flex;
-}
-
-.review-header img {
-    border-radius: 50%;
-}
-
-.review-name {
-    color: #005494;
-}
-
-.review-quote {
-    font-style: italic;
-    color: rgba(150, 150, 150, 1);
-}
 
 .card-img {
     position: relative;
@@ -495,75 +442,8 @@ body{
     color: #005494;
 }
 
-.newsletter-form {
-    padding-top: 10px;
-}
-
-.newsletter-input {
-    box-shadow: 0px 10.67px 56px 0px #22272F0A;
-    border: none;
-    border-radius: 16px;
-}
-
-.newsletter-disclaimer {
-    padding-bottom: 100px;
-    color: rgba(150, 150, 150, 1);
-    margin: auto;
-}
 
 
-
-.custom-text1122 {
-    color: #969696;
-    max-width: 500px;
-}
-
-.custom-button1122 {
-    border: 1px solid #005494;
-    padding: 10px;
-    border-radius: 12px;
-    color: #005494;
-}
-
-
-.camera_page_s1 {
-    background-color: #005494;
-    padding: 20px;
-    top: 200px;
-    left: 150px;
-    gap: 0px;
-    opacity: 0px;
-
-    border-radius: 32PX;
-}
-
-.camera_page_s1 h1 {
-    font-family: Montserrat;
-    font-size: 40px;
-    font-weight: 800;
-    text-align: center;
-    color: white;
-    max-width: 700px;
-    margin: auto;
-}
-
-
-.camera_section2 h1 {
-    font-family: Montserrat;
-    font-size: 32px;
-    font-weight: 600;
-    line-height: 48px;
-    text-align: left;
-}
-
-.camera_section2 {
-    font-family: Poppins;
-    font-size: 16px;
-    font-weight: 400;
-    line-height: 24px;
-    text-align: left;
-
-}
 
 .text_item {
     border: 2px solid rgba(230, 230, 230, 1)
@@ -658,23 +538,6 @@ body{
     font-family: Poppins;
     font-size: 9px;
     font-weight: 400;
-    color: rgba(150, 150, 150, 1);
-}
-
-.before_rental {
-    font-family: Montserrat;
-    font-size: 33px;
-    font-weight: 600;
-}
-
-.para_before_rental {
-    font-family: Montserrat;
-    font-size: medium;
-    font-weight: 500;
-    color: rgba(0, 84, 148, 0.8);
-}
-
-.para_before_rental span {
     color: rgba(150, 150, 150, 1);
 }
 
@@ -920,31 +783,12 @@ label {
 
 
 
-.search-rent-btn {
-
-
-
-    font-family: Poppins;
-    font-size: 18px;
-    font-weight: 600;
-    color: white;
-
-    background: rgba(0, 84, 148, 1);
-}
-
-
-
 
 .title-label {
     font-family: Poppins;
     font-weight: 500;
 }
 
-.rental-label {
-    font-family: Poppins;
-
-    font-weight: 500;
-}
 
 .period-label {
     font-family: Poppins;
@@ -1232,349 +1076,6 @@ label {
 
 }
 
-
-
-
-
-
-
-
-
-
-.msg_search_form {
-    padding-top: 12px;
-    padding-bottom: 8px;
-}
-
-.msg_search_form input {
-    border: none;
-    outline: none;
-    border: 1px solid #E6E6E6;
-    border-radius: 50px;
-    padding-left: 10px;
-    width: 244px;
-    height: 40px;
-    font-family: 'Raleway';
-    font-style: normal;
-    font-weight: 500;
-    font-size: 12px;
-    line-height: 14px;
-    color: #585858;
-}
-
-.msg_person {
-    display: flex;
-    justify-content: space-between;
-    padding-top: 21px;
-    align-items: center;
-    cursor: pointer;
-}
-
-.msg_left {
-    display: flex;
-    align-items: center;
-}
-
-.sender_img img {
-    width: 33px;
-    height: 33px;
-    border-radius: 50%;
-    margin-right: 18px;
-}
-
-.sender_info p,
-.sender_info h6,
-.sender_notification_time p,
-.sender_notification_time h6 {
-    font-family: 'Quicksand';
-    font-style: normal;
-    font-weight: 700;
-    font-size: 14px;
-    line-height: 18px;
-    color: #000000;
-}
-
-.sender_info h6 {
-    font-size: 12px;
-    line-height: 14px;
-    font-weight: 400;
-    padding-top: 7px;
-}
-
-.sender_notification_time p {
-    padding-left: 28px !important;
-    font-weight: 400;
-    font-size: 10px;
-    line-height: 12px;
-    color: rgba(88, 88, 88, 0.82);
-}
-
-.sender_notification_time h6 {
-    display: flex;
-    justify-content: end;
-    font-weight: 700;
-    font-size: 14px;
-    line-height: 18px;
-    color: #FA2104;
-}
-
-.chat_p {
-    display: flex;
-    padding: 1px 0px 19px 0px;
-    margin-left: 18px;
-    margin-right: 6px;
-    align-items: center;
-    border-bottom: 1px solid #E6E6E6;
-}
-
-.chat_p h5 {
-    font-style: normal;
-    font-weight: 700;
-    font-size: 14px;
-    line-height: 16px;
-    color: #000000;
-    padding-left: 18px !important;
-}
-
-.mesg_date {
-    padding-top: 20px;
-    padding-bottom: 42px;
-}
-
-.mesg_date p {
-    font-weight: 300;
-    font-size: 11px;
-    line-height: 14px;
-    color: #585858;
-    text-align: center;
-    position: relative;
-    padding-right: 30px !important;
-}
-
-.msg_container {
-    max-width: 628px;
-    margin: 0 auto;
-}
-
-.mesg_date p::before {
-    content: '';
-    position: absolute;
-    left: 12px;
-    width: 199px;
-    height: 1px;
-    top: 5px;
-    background: rgba(88, 88, 88, 0.82);
-}
-
-.mesg_date p::after {
-    content: '';
-    position: absolute;
-    right: 0px;
-    width: 249px;
-    height: 1px;
-    top: 5px;
-    background: rgba(88, 88, 88, 0.82);
-}
-
-.scrol_box {
-    height: 400px;
-    overflow-y: auto;
-    padding-right: 10px;
-}
-
-.scrol_box::-webkit-scrollbar {
-    width: 5px;
-    height: 10px;
-    background-color: lightgrey;
-}
-
-.scrol_box::-webkit-scrollbar-track {
-    background-color: lightgrey;
-}
-
-.scrol_box::-webkit-scrollbar-thumb {
-    background-color: #005494;
-    border-radius: 40px;
-}
-
-.reciever_message {
-    max-width: 362px;
-    background: #D9D9D9;
-    box-shadow: 0px 0px 2px rgba(0, 0, 0, 0.25);
-    border-radius: 50px;
-    padding: 13px 10px 11px 10px;
-}
-
-.reciever_message p,
-.sen_message p {
-    font-weight: 300;
-    font-size: 14px;
-    line-height: 18px;
-    color: #000000;
-    word-break: break-all;
-    padding: 8px 5px 7px 10px !important;
-}
-
-.msg_t p {
-    display: flex;
-    justify-content: center;
-    padding-top: 17px !important;
-    padding-left: 53px !important;
-    font-weight: 300;
-    font-size: 11px;
-    line-height: 14px;
-    color: #585858;
-}
-
-.rec {
-    display: flex;
-    justify-content: end;
-    padding-top: 0px;
-    flex-direction: column;
-    align-items: end;
-}
-
-.sen_message {
-    width: 262px;
-    background: #005494;
-    border-radius: 50px;
-    padding: 13px 10px 11px 17px !important;
-}
-
-.sen_message p {
-    font-weight: 600;
-    font-size: 14px;
-    line-height: 18px;
-    color: white;
-    word-break: break-all;
-}
-
-.sen_message img,
-#rec_mes img {
-    width: 100%;
-    border-radius: 20px;
-    display: flex;
-    justify-content: center;
-    padding: 7px;
-}
-
-.rec_t p {
-    display: flex;
-    justify-content: end;
-}
-
-.open_chat {
-    border-left: 1px solid #D9D9D9;
-}
-
-.send_msg {
-    max-width: 628px;
-    background: #FFFFFF;
-    border: 1px solid #E6E6E6;
-    border-radius: 9px;
-    padding: 0px 22px 0px 8px;
-    display: flex;
-    justify-content: space-between;
-    margin-top: 34px;
-    margin-left: 13px;
-}
-
-.type_msg {
-    width: 100%;
-}
-
-.send_msg textarea {
-    border: none;
-    outline: none;
-    resize: none;
-    width: 100%;
-}
-
-#uploadFilePreview {
-    width: 100%;
-    margin: 5px;
-}
-
-.snd_btn button {
-    border: none;
-    outline: none;
-    background: none;
-    width: 90px;
-    height: 26px;
-    background: #005494;
-    border-radius: 50px;
-    color: white;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
-
-
-.snd_btn {
-    padding-top: 13px;
-    display: flex;
-    align-items: center;
-    padding-bottom: 10px;
-}
-
-.msg_emojis {
-    padding-top: 10px;
-    width: 0px;
-    height: 0px;
-}
-
-.msg_emojis img:first-child {
-    margin-right: 12px;
-    margin-left: 7px;
-}
-
-.lefcol {
-    margin-right: 40px;
-}
-
-/* three dots */
-.showLeft {
-    background-color: white !important;
-    border: 1px solid white !important;
-    text-shadow: white !important;
-    color: black !important;
-    padding: 10px;
-}
-.icons li {
-    background: none repeat scroll 0 0 black;
-    height: 7px;
-    width: 7px;
-    line-height: 0;
-    list-style: none outside none;
-    margin-right: 15px;
-    margin-top: 3px;
-    vertical-align: top;
-    border-radius: 50%;
-    pointer-events: none;
-}
-.btn-left {
-    left: 0.4em;
-}
-.btn-right {
-    right: 0.4em;
-}
-.btn-left,
-.btn-right {
-    position: absolute;
-    top: -3.76em;
-}
-img.message_image {
-    width: 100%;
-    border-radius: 20px;
-    display: flex;
-    justify-content: center;
-    padding: 7px;
-}
-#img_src {
-    width: 33px;
-    height: 33px;
-    border-radius: 50%;
-}
 /* PDP Page Style ========== */
 .pdp_tabs_main_div .nav-pills {
     border-bottom: 2px solid rgba(230, 230, 230, 1)
@@ -1597,12 +1098,6 @@ img.message_image {
     border-bottom: 2px solid #005494;
     font-weight: 600;
 }
-.img_my_rental {
-    width: 100%;
-    height: 200px;
-    border-radius: 12px;
-    object-fit: cover;
-}
 .button_my_item {
 
     outline: none !important;
@@ -1618,106 +1113,6 @@ img.message_image {
     font-weight: 600;
     margin: 0;
 }
-.delect_item_my_items {
-    width: 100%;
-    height: 60px;
-    border-radius: 16px;
-    background: rgba(255, 63, 100, 1);
-}
-.my_item_delect_item {
-    font-family: Poppins;
-    color: white;
-    font-size: 18px;
-    font-weight: 600;
-    margin: 0;
-
-}
-@media (max-width:1324px) {
-    .msg_container {
-        padding: 10px;
-    }
-
-    .msg_search_form input {
-        width: 215px;
-    }
-}
-@media (max-width:924px) {
-
-    .mesg_date p::before,
-    .mesg_date p::after {
-        width: 150px;
-    }
-}
-@media (max-width:767px) {
-    .open_chat {
-        border: none;
-    }
-
-    .dropdown {
-        display: block;
-    }
-
-    .mesg_date p::before,
-    .mesg_date p::after {
-        width: 100px;
-    }
-
-    .rec {
-        padding-top: 10px;
-    }
-
-    .msg_t p {
-        display: block;
-        text-align: right;
-        padding-bottom: 5px !important;
-    }
-
-    .lefcol {
-        margin-right: 0px;
-        padding: 12px;
-    }
-
-    .msg_search_form input {
-        width: 100%;
-    }
-
-    .messages_box {
-        padding: 11px 9px 16px 9px !important;
-    }
-
-    .lefcol {
-        display: none;
-        transition: 0.4s all ease-in-out;
-    }
-
-    .show {
-        display: block;
-        transition: 0.4s all ease-in-out;
-    }
-}
-@media (max-width:425px) {
-
-    .mesg_date p::before,
-    .mesg_date p::after {
-        display: none;
-    }
-
-    .open_chat {
-        padding: 10px;
-    }
-
-    .sen_message {
-        width: 220px;
-    }
-
-    .send_msg {
-        display: block;
-    }
-}
-
-
-
-
 
 @media (max-width: 992px) {
     .roo {
@@ -1727,18 +1122,6 @@ img.message_image {
 
     .img-coin {
         flex-direction: column;
-    }
-}
-
-@media (max-width: 750px) {
-    .inbox {
-        flex-direction: column;
-        align-items: center;
-    }
-
-    .inbox-button {
-        margin-bottom: 10px;
-        /* Adjust spacing between buttons */
     }
 }
 
