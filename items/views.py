@@ -16,7 +16,6 @@ from django.http import JsonResponse
 from django.shortcuts import render
 from .models import Product
 import random
-from general.models import HeroSection
 
 from django.shortcuts import render
 from django.http import JsonResponse
