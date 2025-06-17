@@ -46,7 +46,6 @@ def upload_image_view(request):
 
 
 def random_products(request):
-    hero = HeroSection.objects.first()
     query = request.GET.get('q', '')  # Get the search query
     products = list(Product.objects.all())  # Get all products
     random.shuffle(products)  # Shuffle the products
@@ -76,7 +75,7 @@ def random_products(request):
         ]
         return JsonResponse({'products': products_data})
 
-    return render(request, 'random_products.html', {'page_obj': page_obj,'categories': categories ,'hero': hero})
+    return render(request, 'random_products.html', {'page_obj': page_obj,'categories': categories })
 
 
 
