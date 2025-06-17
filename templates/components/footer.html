@@ -1,23 +1,16 @@
-
-
-
 {% load static %}
-
-
-
-
-
-
-
 <footer>
     <div class="container-fluid" style="background: rgba(0, 84, 148, 0.06); ;">
         <div class="container relative">
             <div class="foot">
                 <div class="row">
                     <div class="col-lg-4 mt-5">
-                        <div class="mb-4 footer-logo-wrap" id=><a href="/index.html" id="pak" class="footer-logo">
-                                <img src="{% static 'image/nav/aa.png' %}" style="height: 120px;" alt>
-                            </a></div>
+                        <div class="mb-4 footer-logo-wrap">
+                            <a id="pak" class="footer-logo" style="text-decoration: none;color: #551665;">
+                                <img src="{% static 'images/g10.png' %}" style="height: 40px;" alt> 
+                               <b> Musa's Mart </b>
+                            </a>
+                        </div>
                         <p class="mb-4" id="ot">Musa's Mart was established in 2021 to alleviate and bring
                             awareness to excessive purchasing, over spending and its effect on climate change.
                             Musa's Mart is a member of Revision AI Limited. </p>
@@ -34,19 +27,22 @@
                             <div class="col-6 col-sm-6 col-md-3">
                                 <ul class="list-unstyled" style="line-height: 50px;">
                                     <h6
-                                        style="font-family: Poppins; font-size: 20px; font-weight: 600; line-height: 30px; text-align: left; color: rgba(0, 84, 148, 1);">
+                                        style="font-family: Poppins; font-size: 20px; font-weight: 600; line-height: 30px; text-align: left; color: #551665;">
                                         Musa's Mart</h6>
-                                    <li><a href="#" style="color:black; text-decoration: none;">
+                                    <li><a href="{% url 'random_products'%}" style="color:black; text-decoration: none;">
                                             Product</a></li>
-                                    <li><a href="#" style="text-decoration: none; color:black;">
+                                    <li><a href="{% url 'Category'%}" style="text-decoration: none; color:black;">
                                            Category  </a></li>
-                                    <li><a href="#" style="text-decoration: none; color:black;">FAQs</a></li>
+                                    <li><a href="{% url 'faq'%}" style="text-decoration: none; color:black;">FAQs</a></li>
                                 </ul>
                             </div>
                             <div class="col-6 col-sm-6 col-md-5">
                                 <div class="footer_contact_text">
-                                    <p> <a href=" {% url 'term'%}" style="text-decoration: none ;"> Term of use </a></p>
-                                    <p><a href=" {% url 'privacy'%}" style="text-decoration: none ;"> Privacy policy </a></p>
+                                    <p> <a href=" {% url 'term'%}" style="text-decoration: none;color: #551665;" style="text-decoration: none ;"> Term of use </a></p>
+                                    <p><a href=" {% url 'privacy'%}"  style="text-decoration: none;color: #551665;" style="text-decoration: none ;"> Privacy policy </a></p>
+
+                                    <p><a href="  {% url 'blog_list'%}"  style="text-decoration: none;color: #551665;" style="text-decoration: none ;"> Blogs </a></p>
+
                                 </div>
                             </div>
                         </div>

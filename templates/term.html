@@ -2,56 +2,83 @@
 {% load static %}
 
 {% block content %}
-
-<div class="container">
-
-    
-    
-
   <style>
-      h1, h3 { color: #000000; }
-      a { color: #000000; text-decoration: none; }
-    </style>
-    
-    <h1>Terms and Conditions</h1>
+    body {
+      background-color: #f7f9fc;
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      line-height: 1.7;
+    }
+
+    h1 {
+      color: #1a1a1a;
+      font-size: 2.5rem;
+      font-weight: 700;
+      margin-bottom: 30px;
+    }
+
+    h3 {
+      color: #333333;
+      margin-top: 30px;
+      font-size: 1.4rem;
+      font-weight: 600;
+    }
+
+    p, li {
+      color: #555555;
+      font-size: 1rem;
+    }
+
+    a {
+      color: #007BFF;
+      text-decoration: underline;
+    }
+
+    .terms-container {
+      background-color: #ffffff;
+      border-radius: 26px;
+      padding: 3rem;
+      max-width: 1100px;
+      margin: 3rem auto;
+      box-shadow: 0 4px 12px rgba(0, 0, 0, 0.05);
+    }
+  </style>
+
+  <div class="container terms-container">
+    <h1 class="text-center">Terms and Conditions</h1>
     <p><strong>Effective Date:</strong> 26 May 2025</p>
-    
+
     <p>Welcome to <strong>Musa Smart</strong>! These Terms and Conditions govern your use of our website, located at <a href="http://www.musasmart.com">http://www.musasmart.com</a>. By using our site, you agree to these terms.</p>
-    
+
     <h3>1. Use of the Website</h3>
     <p>You agree not to misuse our site, including engaging in unauthorized access or spreading harmful content.</p>
-    
+
     <h3>2. Intellectual Property</h3>
     <p>All content is the property of Musa Smart and may not be copied or reused without permission.</p>
-    
+
     <h3>3. User Accounts</h3>
     <p>You are responsible for safeguarding your account details and ensuring they are accurate.</p>
-    
+
     <h3>4. Purchases and Payments</h3>
     <p>All orders are subject to acceptance. Payments are handled by secure third-party providers.</p>
-    
+
     <h3>5. Limitation of Liability</h3>
     <p>We are not liable for any damages from the use or inability to use the website.</p>
-    
+
     <h3>6. External Links</h3>
     <p>We are not responsible for third-party websites linked from ours.</p>
-    
+
     <h3>7. Termination</h3>
     <p>We reserve the right to suspend access if you violate these terms.</p>
-    
+
     <h3>8. Changes to These Terms</h3>
     <p>We may update these terms, and changes will be posted on this page.</p>
-    
+
     <h3>9. Governing Law</h3>
     <p>These terms are governed by the laws of [Insert Country/City].</p>
-    
+
     <h3>10. Contact Us</h3>
     <p>For questions, please contact:<br>
-        <strong>Email:</strong> [insert email]<br>
-        <strong>Website:</strong> <a href="http://www.musasmart.com">http://www.musasmart.com</a></p>
-        
-        
-        
-
-    </div>
+      <strong>Email:</strong> [insert email]<br>
+      <strong>Website:</strong> <a href="http://www.musasmart.com">http://www.musasmart.com</a></p>
+  </div>
 {% endblock %}

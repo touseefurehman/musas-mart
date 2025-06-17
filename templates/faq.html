@@ -1,0 +1,78 @@
+{% extends "base.html" %}
+{% load static %}
+
+{% block content %}
+  <style>
+    body {
+      background-color: #f7f9fc;
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      line-height: 1.7;
+    }
+
+    h1 {
+      color: #1a1a1a;
+      font-size: 2.5rem;
+      font-weight: 700;
+      margin-bottom: 30px;
+    }
+
+    h3 {
+      color: #333333;
+      font-size: 1.2rem;
+      font-weight: 600;
+      margin-top: 25px;
+    }
+
+    p {
+      color: #555555;
+      font-size: 1rem;
+    }
+
+    .faq-container {
+      background-color: #ffffff;
+      border-radius: 26px;
+      padding: 3rem;
+      max-width: 1100px;
+      margin: 3rem auto;
+      box-shadow: 0 4px 12px rgba(0, 0, 0, 0.05);
+    }
+  </style>
+
+  <div class="container faq-container">
+    <h1 class="text-center">Frequently Asked Questions (FAQ)</h1>
+
+    <h3>1. Do I need to create an account to place an order?</h3>
+    <p>No, you do not need to log in or create an account. You can place an order directly without any registration.</p>
+
+    <h3>2. How can I place an order?</h3>
+    <p>You can place an order by filling out a simple form with your name, phone number, product name, address, and preferred order method.</p>
+
+    <h3>3. What are the available order methods?</h3>
+    <p>We offer two ways to place an order:</p>
+    <ul>
+      <li><strong>WhatsApp Order:</strong> You will be redirected to WhatsApp with your order details pre-filled. Just hit "send".</li>
+      <li><strong>Direct Order:</strong> The order is placed directly on our website without redirection.</li>
+    </ul>
+
+    <h3>4. How do I track my order?</h3>
+    <p>After placing the order, you will receive a unique Order ID. You can use that Order ID (or your phone number) on our <strong>Track Order</strong> page to check the current status of your order.</p>
+
+    <h3>5. Will I get confirmation for my order?</h3>
+    <p>Yes, after placing the order, you'll see a confirmation message on the screen and optionally on WhatsApp if that method is used.</p>
+
+    <h3>6. Is it safe to order without logging in?</h3>
+    <p>Yes. We keep your personal details secure and only use them to fulfill your order. No account is required, but your data is still treated with care.</p>
+
+    <h3>7. Can I cancel or modify my order?</h3>
+    <p>To cancel or modify your order, please contact us via WhatsApp or email as soon as possible using your Order ID.</p>
+
+    <h3>8. What should I do if I lose my Order ID?</h3>
+    <p>If you lose your Order ID, you can track using your phone number or contact our support team for help.</p>
+
+    <h3>9. How long does it take to process my order?</h3>
+    <p>We aim to process all orders within 24 hours. Delivery time depends on your location.</p>
+
+    <h3>10. Still have questions?</h3>
+    <p>If your question isn’t listed here, feel free to reach out via WhatsApp or visit our <a href="/contact/">Contact Page</a>.</p>
+  </div>
+{% endblock %}

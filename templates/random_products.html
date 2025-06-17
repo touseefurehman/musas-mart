@@ -241,48 +241,10 @@
     </section>
 </div>
 
-<script>
-    $(document).ready(function() {
-        $('#search-form').on('submit', function(event) {
-            event.preventDefault(); // Prevent full page reload
 
-            let formData = $(this).serialize(); // Serialize form data
 
-            $.ajax({
-                type: 'GET',
-                url: $(this).attr('action'),
-                data: formData,
-                dataType: 'json',
-                success: function(response) {
-                    let productList = $('#product-list');
-                    productList.empty(); // Clear existing products
 
-                    if (response.products.length > 0) {
-                        $.each(response.products, function(index, product) {
-                            let productHtml = `
-                                <div class="col-md-3 mb-4">
-                                    <div class="card">
-                                        <img src="${product.image_url}" class="card-img-top" alt="${product.name}">
-                                        <div class="card-body">
-                                            <h5 class="card-title">${product.title}</h5>
-                                            <p class="card-text">$${product.price}</p>
-                                        </div>
-                                    </div>
-                                </div>
-                            `;
-                            productList.append(productHtml);
-                        });
-                    } else {
-                        productList.append('<p class="alert alert-warning text-center">No products found.</p>');
-                    }
-                },
-                error: function(xhr, status, error) {
-                    console.error("Error:", xhr.responseText);
-                }
-            });
-        });
-    });
-</script>
+
 <script>
     document.addEventListener("DOMContentLoaded", function () {
       const priceElements = document.querySelectorAll(".card-text");

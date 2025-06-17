@@ -1,0 +1,13 @@
+<!-- templates/blog/blog_detail.html -->
+{% extends "base.html" %}
+{% block content %}
+<div class="container">
+  <h1>{{ blog.title }}</h1>
+  <p><small>Posted on {{ blog.created_at }}</small></p>
+  {% if blog.image %}
+  <img src="{{ blog.image.url }}" alt="{{ blog.title }}" class="img-fluid mb-4">
+  {% endif %}
+  <p>{{ blog.content }}</p>
+  <a href="{% url 'blog_list' %}">← Back to Blog</a>
+</div>
+{% endblock %}

@@ -16,6 +16,7 @@ from django.http import JsonResponse
 from django.shortcuts import render
 from .models import Product
 import random
+from general.models import HeroSection
 
 from django.shortcuts import render
 from django.http import JsonResponse
@@ -31,6 +32,7 @@ from django.http import JsonResponse
 
 
 def upload_image_view(request):
+
     if request.method == 'POST' and request.FILES.get('image'):
         uploaded_file = request.FILES['image']
         result = cloudinary.uploader.upload(uploaded_file, public_id="test_image")
@@ -45,6 +47,7 @@ def upload_image_view(request):
 
 
 def random_products(request):
+    hero = HeroSection.objects.first()
     query = request.GET.get('q', '')  # Get the search query
     products = list(Product.objects.all())  # Get all products
     random.shuffle(products)  # Shuffle the products
@@ -74,7 +77,7 @@ def random_products(request):
         ]
         return JsonResponse({'products': products_data})
 
-    return render(request, 'random_products.html', {'page_obj': page_obj,'categories': categories })
+    return render(request, 'random_products.html', {'page_obj': page_obj,'categories': categories ,'hero': hero})
 
 
 
@@ -94,40 +97,6 @@ def track(request):
             error_message = "Please enter a tracking key."
 
     return render(request, "track.html", {"order_info": order_info, "error_message": error_message})
-
-# def random_products(request):
-#     query = request.GET.get('q', '')  # Get the search query
-#     products = list(Product.objects.all())  # Get all products
-#     random.shuffle(products)  # Shuffle the products
-
-#     if query:
-#         products = [product for product in products if query.lower() in product.name.lower()]
-
-#     if not products:
-#         return render(request, 'random_products.html', {'message': 'No products found.'})  # Pass message to template
-
-#     paginator = Paginator(products, 8)  # Paginate with 8 products per page
-#     page_number = request.GET.get('page')
-#     page_obj = paginator.get_page(page_number)
-
-#     if request.headers.get('X-Requested-With') == 'XMLHttpRequest':  # Check if the request is AJAX
-#         products_data = [
-#             {
-#                 'id': product.id,
-#                 'name': product.name,
-#                 'price': product.price,
-#                 'image_url': product.image.url if product.image else '',
-#             }
-#             for product in page_obj
-#         ]
-#         return JsonResponse({'products': products_data, 'has_next': page_obj.has_next(), 'has_previous': page_obj.has_previous()})
-
-#     return render(request, 'random_products.html', {'page_obj': page_obj})
-
-
-
-
-
 
  # views for category of items
 def Category (request):
@@ -256,7 +225,11 @@ def privacy(request):
 
     return render(request, 'privacy.html')
 
+    
+    
+def faq(request):
 
+    return render(request, 'faq.html')
     
 def term(request):
 
