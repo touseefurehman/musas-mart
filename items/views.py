@@ -1,32 +1,14 @@
 from django.shortcuts import render, redirect, get_object_or_404
+from django.contrib import messages
 from django.contrib.auth.decorators import login_required
 from django.core.paginator import Paginator
-from .models import Product
-from django.db.models import Avg
-from items.models import ItemCategory,CheckoutInfo,Product
-from django.conf import settings  # new
+from django.http import JsonResponse
+from django.conf import settings
 from django.urls import reverse
-from django import template
-from datetime import datetime
-import random
-from django.contrib import messages
-from django.shortcuts import render
-from django.core.paginator import Paginator
-from django.http import JsonResponse
-from django.shortcuts import render
 from .models import Product
-import random
-
-from django.shortcuts import render
-from django.http import JsonResponse
-from django.core.paginator import Paginator
-from .models import Product
-import random
+from items.models import ItemCategory, CheckoutInfo
 import cloudinary.uploader
-from django.http import JsonResponse
-
-
-
+import random
 
 
 
@@ -42,40 +24,67 @@ def upload_image_view(request):
 
 
 
-
-
-
+# -------------------- Random Products --------------------
 def random_products(request):
-    query = request.GET.get('q', '')  # Get the search query
-    products = list(Product.objects.all())  # Get all products
-    random.shuffle(products)  # Shuffle the products
+    query = request.GET.get('q', '')
     categories = ItemCategory.objects.all()
 
+    products_qs = Product.objects.only('id', 'title', 'price', 'image')  # load minimal fields
     if query:
-        products = [product for product in products if query.lower() in product.title.lower()]
+        products_qs = products_qs.filter(title__icontains=query)
 
-    if not products:
-        if request.headers.get('X-Requested-With') == 'XMLHttpRequest':
-            return JsonResponse({'products': []})  # Return empty JSON response for AJAX
-        return render(request, 'random_products.html', {'message': 'No products found.'})  # For normal page load
+    products = list(products_qs)
+    random.shuffle(products)
 
-    paginator = Paginator(products, 16)  # Paginate with 8 products per page
+    paginator = Paginator(products, 16)
     page_number = request.GET.get('page')
     page_obj = paginator.get_page(page_number)
 
-    if request.headers.get('X-Requested-With') == 'XMLHttpRequest':  # Check if AJAX request
-        products_data = [
-            {
-                'id': product.id,
-                'title': product.title,
-                'price': product.price,
-                'image_url': product.image.url if product.image else '',
-            }
-            for product in page_obj
-        ]
-        return JsonResponse({'products': products_data})
+    if request.headers.get('X-Requested-With') == 'XMLHttpRequest':
+        return JsonResponse({
+            'products': [{
+                'id': p.id,
+                'title': p.title,
+                'price': p.price,
+                'image_url': p.image.url if p.image else '',
+            } for p in page_obj]
+        })
 
-    return render(request, 'random_products.html', {'page_obj': page_obj,'categories': categories })
+    return render(request, 'random_products.html', {'page_obj': page_obj, 'categories': categories})
+
+
+
+# def random_products(request):
+#     query = request.GET.get('q', '')  # Get the search query
+#     products = list(Product.objects.all())  # Get all products
+#     random.shuffle(products)  # Shuffle the products
+#     categories = ItemCategory.objects.all()
+
+#     if query:
+#         products = [product for product in products if query.lower() in product.title.lower()]
+
+#     if not products:
+#         if request.headers.get('X-Requested-With') == 'XMLHttpRequest':
+#             return JsonResponse({'products': []})  # Return empty JSON response for AJAX
+#         return render(request, 'random_products.html', {'message': 'No products found.'})  # For normal page load
+
+#     paginator = Paginator(products, 16)  # Paginate with 8 products per page
+#     page_number = request.GET.get('page')
+#     page_obj = paginator.get_page(page_number)
+
+#     if request.headers.get('X-Requested-With') == 'XMLHttpRequest':  # Check if AJAX request
+#         products_data = [
+#             {
+#                 'id': product.id,
+#                 'title': product.title,
+#                 'price': product.price,
+#                 'image_url': product.image.url if product.image else '',
+#             }
+#             for product in page_obj
+#         ]
+#         return JsonResponse({'products': products_data})
+
+#     return render(request, 'random_products.html', {'page_obj': page_obj,'categories': categories })
 
 
 

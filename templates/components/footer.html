@@ -1,4 +1,6 @@
 {% load static %}
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
 <footer>
     <div class="container-fluid" style="background: rgba(0, 84, 148, 0.06); ;">
         <div class="container relative">
@@ -15,10 +17,9 @@
                             awareness to excessive purchasing, over spending and its effect on climate change.
                             Musa's Mart is a member of Revision AI Limited. </p>
                         <div class="social-icons">
-                            <a href="#" class="fa fa-facebook"></a>
-                            <a href="#" class="fa fa-linkedin"></a>
-                            <a href="#" class="fa fa-instagram"></a>
-                            <a href="#" class="fa fa-youtube"></a>
+                            <a href="{{ site_settings.facebook }}" class="fa fa-facebook" style="color: #634C9F"></a>
+                            <a href="{{ site_settings.instagram }}" class="fa fa-instagram"  style="color: #634C9F"></a>
+                            <a href="{{ site_settings.youtube }}" class="fa fa-youtube"  style="color: #634C9F"></a>
                         </div>
                     </div>
                     <div class="col-lg-1"></div>
@@ -34,6 +35,8 @@
                                     <li><a href="{% url 'Category'%}" style="text-decoration: none; color:black;">
                                            Category  </a></li>
                                     <li><a href="{% url 'faq'%}" style="text-decoration: none; color:black;">FAQs</a></li>
+                                    <li><a href="{% url 'contact'%}" style="text-decoration: none; color:black;">Contact Us</a></li>
+
                                 </ul>
                             </div>
                             <div class="col-6 col-sm-6 col-md-5">

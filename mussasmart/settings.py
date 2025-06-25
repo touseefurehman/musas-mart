@@ -37,6 +37,8 @@ INSTALLED_APPS = [
     'django.contrib.staticfiles',
     'items',
     'import_export',
+    'general',
+    'ckeditor',
 
 
 ]
@@ -68,6 +70,8 @@ TEMPLATES = [
                 'django.template.context_processors.request',
                 'django.contrib.auth.context_processors.auth',
                 'django.contrib.messages.context_processors.messages',
+                 'general.context_processors.general_settings',  # 👈 add this line
+
             ],
         },
     },
